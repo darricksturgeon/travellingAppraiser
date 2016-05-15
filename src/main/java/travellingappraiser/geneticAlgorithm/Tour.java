@@ -88,7 +88,7 @@ public class Tour {
         Tour bestTour = possibleInsertions.get(0);
         double bestFitness = possibleInsertions.get(0).getFitness();
         for (Tour t : possibleInsertions) {
-            if(bestFitness>t.getFitness()) {
+            if(bestFitness<t.getFitness()) {
                 bestFitness = t.getFitness();
                 bestTour = t;
             }
