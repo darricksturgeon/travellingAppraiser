@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/travelling-appraiser.iml" filepath="$PROJECT_DIR$/.idea/modules/travelling-appraiser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/travelling-appraiser_main.iml" filepath="$PROJECT_DIR$/.idea/modules/travelling-appraiser_main.iml" group="travelling-appraiser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/travelling-appraiser_test.iml" filepath="$PROJECT_DIR$/.idea/modules/travelling-appraiser_test.iml" group="travelling-appraiser" />
+    </modules>
+  </component>
+</project>
