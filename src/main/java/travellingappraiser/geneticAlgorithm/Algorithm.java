@@ -32,8 +32,7 @@ public class Algorithm {
         for (int i = elitismOffset; i < pop.size(); i++) {
             Tour parent1 = tournamentSelection(pop);
             Tour parent2;
-            do {
-                parent2 = tournamentSelection(pop);
+            do { parent2 = tournamentSelection(pop);
             } while(parent2==parent1);
 
             Tour child = simpleCrossover(parent1,parent2);
@@ -60,9 +59,7 @@ public class Algorithm {
         int subroutePosition = (int) ((PATH_LENGTH-subrouteLength)*Math.random());
         short[] subroute = new short[subrouteLength];
 
-        for (int j = 0; j < subrouteLength; j++) {
-            subroute[j] = route[subroutePosition+j];
-        }
+        System.arraycopy(route, subroutePosition, subroute, 0, subrouteLength);
 
 
         //delete the duplicate information in child.
@@ -120,7 +117,9 @@ public class Algorithm {
     }
 
     //
-    private static void mutuateSlide(Tour tour) {
+    private static void mutateSlide(Tour tour) {
+
+
 
     }
 
@@ -134,7 +133,6 @@ public class Algorithm {
             tournament.saveIndividual(i, pop.getIndividual(randomId));
         }
         // Get the fittest
-        Tour fittest = tournament.getFittest();
-        return fittest;
+        return tournament.getFittest();
     }
 }

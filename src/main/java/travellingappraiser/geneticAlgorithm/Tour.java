@@ -65,7 +65,7 @@ public class Tour {
     //takes a subroute and finds the best possible position for the subroute.
     public Tour bestInsertion(short[] subroute) {
 
-        ArrayList<Tour> possibleInsertions = new ArrayList<Tour>(TOTAL_LOCATIONS+1);
+        ArrayList<Tour> possibleInsertions = new ArrayList<>(TOTAL_LOCATIONS + 1);
         /*
         if we have an array size L, split into M parts of length given by getRouteData...
         each Route is length K, then for all M s.t. subroute.length <= k, there are
@@ -140,30 +140,27 @@ public class Tour {
 
     //returns the end of genes where route lengths are stored
     public short[] getRouteData() {
-        short[] array = Arrays.copyOfRange(
+        return Arrays.copyOfRange(
                 this.genes,
                 TOTAL_LOCATIONS,
                 TOTAL_LOCATIONS+ ROUTES);
-        return array;
     }
 
     //returns specified route
     public short[] getRoute(int route) {
 
         int[] indeces = getRouteIndeces(route);
-        short[] array = Arrays.copyOfRange(
+        return Arrays.copyOfRange(
                 this.genes,
                 indeces[0],
                 indeces[1]+1);
-
-        return array;
 
     }
     //returns {point where route begins, length of route}.  Input is route# starting with 0.
     public int[] getRouteIndeces(int route) {
         int startpoint = 0;
         int endpoint;
-        if (VARY_ROUTE_LENGTH == false) {
+        if (!VARY_ROUTE_LENGTH) {
             startpoint = PATH_LENGTH*route;
             endpoint = startpoint+PATH_LENGTH;
         } else {
@@ -191,12 +188,16 @@ public class Tour {
         return fitness;
     }
 
+    public void setRoute(int index, short routelength) {
+        this.genes[TOTAL_LOCATIONS+index] = routelength;
+    }
+
+
     @Override
     public String toString() {
         String geneString = "";
         for (int i = 0; i<size(); i++) {
             geneString += getGene(i) + " ";
-            return geneString;
         }
         geneString+= "Routes: ";
 
@@ -206,11 +207,6 @@ public class Tour {
         return geneString;
 
     }
-
-    public void setRoute(int index, short routelength) {
-        this.genes[TOTAL_LOCATIONS+index] = routelength;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
