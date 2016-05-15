@@ -10,7 +10,7 @@ import static travellingappraiser.geneticAlgorithm.Defaults.*;
 public class Algorithm {
 
     /* GA parameters */
-    private static final double flipMutationRate = 0.1;
+    private static final double flipMutationRate = 0.12;
     private static final double swapMutationRate = 0.5;
     private static final int tournamentSize = 8;
     private static final boolean elitism = true;
@@ -107,10 +107,10 @@ public class Algorithm {
     private static void mutateFlip(Tour tour) {
 
         int index = (int) (Math.random()*(TOTAL_LOCATIONS -4));
-        int length = (int) ( 3+(Math.random()*(TOTAL_LOCATIONS-index-3)));
+        int length = (int) (3+Math.random()*(TOTAL_LOCATIONS-4-index));
 
         short[] flipValues = new short[length];
-        for (int i=length-1; i > 0; i--) {
+        for (int i=0;i<length;i++) {
             flipValues[i] = tour.getGene(index+length-1-i);
         }
         for (int i = 0; i < length; i++) {
