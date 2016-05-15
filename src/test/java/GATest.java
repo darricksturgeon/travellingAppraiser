@@ -18,14 +18,12 @@ public class GATest {
         int[][] distanceMatrix = TestObjects.randDistanceMatrix(36);
         FitnessCalc.setDistanceMatrix(distanceMatrix);
 
-        FitnessCalc.getDistanceMatrix();
-
-        Population pop = new Population (50, true);
+        Population pop = new Population (20, true);
         System.out.println("Initial fitness = " + pop.getFittest().getFitness()
                 + " Distance: " + 1/pop.getFittest().getFitness());
 
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100000; i++) {
             pop = Algorithm.evolvePopulation(pop);
         }
 
