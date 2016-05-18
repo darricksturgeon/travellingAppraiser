@@ -227,4 +227,13 @@ public class Tour {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
+
+    //returns just the location information, without route lengths.
+    public short[] getPathing() {
+        short[] pathing = new short[TOTAL_LOCATIONS];
+        for (int i = 0; i < pathing.length; i++) {
+            pathing[i] = genes[i];
+        }
+        return pathing;
+    }
 }
