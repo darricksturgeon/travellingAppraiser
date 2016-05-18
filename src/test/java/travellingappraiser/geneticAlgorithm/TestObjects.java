@@ -1,3 +1,5 @@
+package travellingappraiser.geneticAlgorithm;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -10,8 +12,8 @@ import static java.lang.Math.sqrt;
  */
 public class TestObjects {
 
-    public static int[][] randDistanceMatrix(int locations) {
-        return locs2Dist(randMatrix(locations));
+    public static int[][] randDistanceMatrix(double[][] locations) {
+        return locs2Dist(locations);
     }
 
     public static double[][] randMatrix(int n) {
@@ -22,7 +24,7 @@ public class TestObjects {
         int j = 0;
 
         for(int i=0;i<n;i++) {
-            matrix[i][j] = random()*400;
+            matrix[i][j] = random()*4000;
             if ((j == 0) && (i == (n - 1))) {i=-1;j=1;}
 
         }

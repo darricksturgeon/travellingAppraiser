@@ -9,6 +9,8 @@ import travellingappraiser.geneticAlgorithm.*;
 
 import javax.swing.*;
 
+import static travellingappraiser.geneticAlgorithm.Defaults.TOTAL_LOCATIONS;
+
 /**
  * Created by darrick on 5/15/16.
  */
@@ -24,14 +26,26 @@ public class GraphStreamGraphTest {
     @Test
     public void runGraphStream() {
 
-        locations = TestObjects.randMatrix(36);
+        locations = TestObjects.randMatrix(TOTAL_LOCATIONS+1);
         int[][] distanceMatrix = TestObjects.randDistanceMatrix(locations);
+
+
+        /*this tests the concept of adding 'house viewing' times,
+         *which would mean that the final home stretch is eliminated.
+
+        for (int i = 0; i < distanceMatrix[0].length; i++) {
+            for (int j = 1; j < distanceMatrix[0].length; j++) {
+                distanceMatrix[i][j] += 400;
+            }
+        }
+        */
+
 
         Population pop = new Population (20, true);
         FitnessCalc.setDistanceMatrix(distanceMatrix);
         bestTour = pop.getFittest();
         System.out.println("Initial fitness = " + pop.getFittest().getFitness()
-                + " Distance: " + 1/pop.getFittest().getFitness());
+                + " Distance: " + -pop.getFittest().getFitness());
 
         graph = new GraphStreamGraph(locations, bestTour,graphLock);
 
@@ -50,7 +64,7 @@ public class GraphStreamGraphTest {
         }
 
         System.out.println("Final fitness: "
-                + pop.getFittest().getFitness() + " Distance: " + 1/pop.getFittest().getFitness());
+                + pop.getFittest().getFitness() + " Distance: " + -pop.getFittest().getFitness());
 
         System.out.println(pop.getFittest().toString());
 

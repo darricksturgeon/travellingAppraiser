@@ -36,7 +36,7 @@ public class FitnessCalc {
         }
 
 
-        return (double)1/ (double)totalDistance; //not good enough.  Need to brainstorm a better solution.
+        return -totalDistance; //not good enough.  Need to brainstorm a better solution.
     }
 
     private static int findRouteDistance(Tour tour, int nodes, int index) {

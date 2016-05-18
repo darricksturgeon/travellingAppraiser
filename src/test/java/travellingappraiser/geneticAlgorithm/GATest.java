@@ -1,10 +1,8 @@
-import com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator;
-import org.junit.Test;
-import travellingappraiser.geneticAlgorithm.Algorithm;
-import travellingappraiser.geneticAlgorithm.FitnessCalc;
-import travellingappraiser.geneticAlgorithm.Population;
+package travellingappraiser.geneticAlgorithm;
 
-import java.util.Arrays;
+import org.junit.Test;
+
+import static travellingappraiser.geneticAlgorithm.Defaults.TOTAL_LOCATIONS;
 
 /**
  * Created by darrick on 5/14/16.
@@ -14,8 +12,8 @@ public class GATest {
 
     @Test
     public void runGeneticAlgorithmTest() {
-
-        int[][] distanceMatrix = TestObjects.randDistanceMatrix(36);
+        double[][] locations = TestObjects.randMatrix(TOTAL_LOCATIONS+1);
+        int[][] distanceMatrix = TestObjects.randDistanceMatrix(locations);
         FitnessCalc.setDistanceMatrix(distanceMatrix);
 
         Population pop = new Population (20, true);
