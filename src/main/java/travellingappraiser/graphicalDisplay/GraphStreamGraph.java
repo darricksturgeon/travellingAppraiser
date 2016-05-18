@@ -14,7 +14,7 @@ import travellingappraiser.geneticAlgorithm.Tour;
 public class GraphStreamGraph implements Runnable {
 
     //fields for Graphical Display
-    private Graph graph;
+    public Graph graph;
     private Viewer viewer;
     private GraphLock graphLock;
 
@@ -22,7 +22,7 @@ public class GraphStreamGraph implements Runnable {
     //fields for Graph G(V,E) computation
     private final float[][] nodes;  //Home is at row 0.  Rest must be consistent with intial user input order.
     private int[] edges;
-    private final Tour tour;  //points to a tour, "bestTour" in RunGA
+    private Tour tour;  //points to a tour, "bestTour" in RunGA
         private short[] genes;
         private short[] routes;
 
@@ -48,6 +48,7 @@ public class GraphStreamGraph implements Runnable {
         viewer = graph.display();
         viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
         viewer.disableAutoLayout();
+        viewer.enableXYZfeedback(true);
 
 
         //have to try synchronization with Graphstreamgraphtest
@@ -70,8 +71,10 @@ public class GraphStreamGraph implements Runnable {
 
     }
 
-    private void startGraph() {
+    public void startGraph() {
+
         graph = new SingleGraph("Location Map");
+        addNodes();
     }
 
     //takes a set of genes and constructs an array which describes each circuit.
@@ -101,7 +104,8 @@ public class GraphStreamGraph implements Runnable {
         }
     }
 
-    private void updateEdges() {
+    public void updateEdges() {
+        setEdges();
         while(graph.getEdgeCount()>0) {
             graph.removeEdge(0);
         }
@@ -117,6 +121,10 @@ public class GraphStreamGraph implements Runnable {
         this.genes = this.tour.getPathing();
 
 
+    }
+
+    public void setTour(Tour tour) {
+        this.tour = tour;
     }
 
     /*

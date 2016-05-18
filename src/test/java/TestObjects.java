@@ -22,7 +22,7 @@ public class TestObjects {
         int j = 0;
 
         for(int i=0;i<n;i++) {
-            matrix[i][j] = random()*40;
+            matrix[i][j] = random()*400;
             if ((j == 0) && (i == (n - 1))) {i=-1;j=1;}
 
         }

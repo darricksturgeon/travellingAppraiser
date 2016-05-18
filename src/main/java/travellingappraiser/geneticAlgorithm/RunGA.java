@@ -16,8 +16,6 @@ public class RunGA {
 
         Population pop = new Population (20, true);
 
-        new Thread(
-                new GraphStreamGraph(locations, bestTour, GAupdated,GAcomplete));
 
 
 

@@ -1,8 +1,13 @@
 package travellingappraiser.graphicalDisplay;
 
+import org.graphstream.ui.graphicGraph.GraphicGraph;
+import org.graphstream.ui.view.View;
+import org.graphstream.ui.view.Viewer;
 import org.junit.Before;
 import org.junit.Test;
 import travellingappraiser.geneticAlgorithm.*;
+
+import javax.swing.*;
 
 /**
  * Created by darrick on 5/15/16.
@@ -10,16 +15,15 @@ import travellingappraiser.geneticAlgorithm.*;
 public class GraphStreamGraphTest {
 
 
-    private Tour bestTour;
-    private GraphLock graphLock;
+    public Tour bestTour;
+    private GraphStreamGraph graph;
     private double[][] locations;
-
+    private GraphLock graphLock = new GraphLock();
 
 
     @Test
     public void runGraphStream() {
 
-        graphLock = new GraphLock();
         locations = TestObjects.randMatrix(36);
         int[][] distanceMatrix = TestObjects.randDistanceMatrix(locations);
 
@@ -29,29 +33,27 @@ public class GraphStreamGraphTest {
         System.out.println("Initial fitness = " + pop.getFittest().getFitness()
                 + " Distance: " + 1/pop.getFittest().getFitness());
 
+        graph = new GraphStreamGraph(locations, bestTour,graphLock);
 
-        Thread graphThread = new Thread(
-                new GraphStreamGraph(locations, bestTour,graphLock));
+        graph.startGraph();
+        graph.updateEdges();
+        Viewer viewer = graph.graph.display(false);
+        viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
 
-        graphThread.start();
-
-        for (int i = 0; i < 500; i++) {
-            for (int j = 0; j < 1000; i++) {
+        for (int i = 0; i < 1000; i++) {
+            for (int j = 0; j < 200; j++) {
                 pop = Algorithm.evolvePopulation(pop);
             }
             bestTour = pop.getFittest();
-
-            synchronized (graphLock) {
-                graphLock.setUpdated(true);
-                graphLock.notifyAll();
-            }
-
+            graph.setTour(bestTour);
+            graph.updateEdges();
         }
 
         System.out.println("Final fitness: "
                 + pop.getFittest().getFitness() + " Distance: " + 1/pop.getFittest().getFitness());
 
         System.out.println(pop.getFittest().toString());
+
 
 
 
