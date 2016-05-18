@@ -16,8 +16,7 @@ public class GraphStreamGraph implements Runnable {
     //fields for Graphical Display
     private Graph graph;
     private Viewer viewer;
-    private boolean updated;
-    private boolean finished;
+    private GraphLock graphLock;
 
 
     //fields for Graph G(V,E) computation
@@ -27,9 +26,8 @@ public class GraphStreamGraph implements Runnable {
         private short[] genes;
         private short[] routes;
 
-    public GraphStreamGraph(double[][] locations, Tour tour, boolean updated, boolean finished) {
-        this.updated = updated;
-        this.finished = finished;
+    public GraphStreamGraph(double[][] locations, Tour tour, GraphLock graphLock) {
+        this.graphLock = graphLock;
         this.tour = tour;
 
         nodes = new float[locations.length][2];
@@ -51,17 +49,19 @@ public class GraphStreamGraph implements Runnable {
         viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
         viewer.disableAutoLayout();
 
-        while(!finished) {
-            updated = false;
-            while (!updated) {
-                try {
-                    wait();
-                } catch (InterruptedException e) {}
+
+        //have to try synchronization with Graphstreamgraphtest
+        synchronized (graphLock) {
+            while (!graphLock.isFinished()) {
+                while (!graphLock.isUpdated()) {
+                    try {
+                        graphLock.wait();
+                    } catch (InterruptedException e) {}
+                }
+                setEdges();
+                updateEdges();
+                viewer.newViewerPipe();
             }
-
-            setEdges();
-            updateEdges();
-
         }
 
         try {
@@ -109,7 +109,7 @@ public class GraphStreamGraph implements Runnable {
         for (int i = 0; i < edges.length-1; i++) {
             graph.addEdge(""+i,edges[i],edges[i+1]);
         }
-        updated = false;
+        graphLock.setUpdated(false);
     }
 
     private void updateGenes() {
