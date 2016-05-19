@@ -79,11 +79,11 @@ public class Algorithm {
     // Mutate an individual
     private static void mutate(Tour tour) {
 
-        if(Math.random()<swapMutationRate) {
+        while(Math.random()<swapMutationRate) {
             mutateSwap(tour);
         }
 
-        if(Math.random()<flipMutationRate){
+        while(Math.random()<flipMutationRate){
             mutateFlip(tour);
         }
 

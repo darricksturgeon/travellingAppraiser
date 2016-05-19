@@ -21,7 +21,6 @@ import static travellingappraiser.geneticAlgorithm.Defaults.*;
  */
 
 public class Tour {
-
     private short[] genes = new short[TOTAL_LOCATIONS + ROUTES];
     // Cache
     private double fitness = 0;
@@ -39,6 +38,10 @@ public class Tour {
 
         for (int i = 0; i < ROUTES; i++) {
             setRoute(i,(short)PATH_LENGTH);
+        }
+
+        if(TOTAL_LOCATIONS%PATH_LENGTH!=0) {
+            setRoute(ROUTES-1, (short) (TOTAL_LOCATIONS % PATH_LENGTH));
         }
 
     }

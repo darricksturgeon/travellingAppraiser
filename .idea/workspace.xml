@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad8a6b47-5654-46e2-8d26-4ab5d9d0dcd3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/GATest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/TestObjects.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/GATest.java" afterPath="$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/GATest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/TestObjects.java" afterPath="$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/TestObjects.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Defaults.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Defaults.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" afterPath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
     </list>
     <ignored path="travelling-appraiser.iws" />
@@ -57,8 +50,8 @@
       <file leaf-file-name="GraphStreamGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            <state relative-caret-position="165">
+              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3365#3366#0" expanded="true" />
@@ -71,21 +64,34 @@
       <file leaf-file-name="Tour.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="-163">
+              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+              <folding>
+                <element signature="e#6060#6061#0" expanded="true" />
+                <element signature="e#6123#6124#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphStreamGraphTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GraphStreamGraphTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+            <state relative-caret-position="257">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Algorithm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,25 +128,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestObjects.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/TestObjects.java">
+      <file leaf-file-name="Defaults.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="135">
+              <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/Math.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="422" column="27" selection-start-line="422" selection-start-column="26" selection-end-line="422" selection-end-column="30" />
               <folding>
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#16338#16339#0" expanded="true" />
+                <element signature="e#16420#16421#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Defaults.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java">
+      <file leaf-file-name="StrictMath.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/StrictMath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="302">
+              <caret line="331" column="46" selection-start-line="331" selection-start-column="46" selection-end-line="331" selection-end-column="46" />
+              <folding>
+                <element signature="e#12605#12606#0" expanded="true" />
+                <element signature="e#12658#12659#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -436,7 +455,6 @@
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Path.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/PathFinder.java" />
         <option value="$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/DrawGraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/SolutionGraphic.java" />
         <option value="$PROJECT_DIR$/src/test/java/GATest.java" />
@@ -448,16 +466,17 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/TANodes.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/runGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" />
         <option value="$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestObjects.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java" />
-        <option value="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/TestObjects.java" />
         <option value="$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/GATest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java" />
+        <option value="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
       </list>
     </option>
   </component>
@@ -575,6 +594,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="travellingappraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travelling-appraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingAppraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingappraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphicalDisplay" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1105,38 +1154,45 @@
       <option name="project" value="LOCAL" />
       <updated>1463606084264</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Sorted out a duplicate class problem">
+      <created>1463609634455</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1463609634455</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 11m 24s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 19m 31s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 14m 07s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 19m 38s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 26m 56s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 22m 33s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 29m 41s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 25m 20s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 32m 10s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 26m 07s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 33m 36s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 27m 16s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 35m 32s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 39m 31s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 36m 15s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 41m 49s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 46m 20s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 42m 36s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 14h 50m 26s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 43m 06s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1152,7 +1208,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.5033622" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.49663785" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39247313" sideWeight="0.49663785" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1162,7 +1218,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24975985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29166666" sideWeight="0.49663785" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29166666" sideWeight="0.49663785" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1214,7 +1270,8 @@
     <MESSAGE value="Fixed bug in mutateFlip" />
     <MESSAGE value="Fixed all bugs.  In terms of the algorithm, I want to table it until we can get some graphics in." />
     <MESSAGE value="Graphics up and running." />
-    <option name="LAST_COMMIT_MESSAGE" value="Graphics up and running." />
+    <MESSAGE value="Sorted out a duplicate class problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorted out a duplicate class problem" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1227,7 +1284,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java</url>
-          <line>137</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -1239,18 +1296,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java</url>
-          <line>68</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="61" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1259,14 +1310,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.maps/google-maps-services/0.1.12/bcdec5cc8cfe775b7d4975e0654626136338a488/google-maps-services-0.1.12-sources.jar!/com/google/maps/model/DistanceMatrix.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/APIClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1327,14 +1370,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/TANodes.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/runGraph.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/jre/lib/rt.jar!/sun/misc/Launcher.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -1450,42 +1485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3365#3366#0" expanded="true" />
-            <element signature="e#3397#3398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Population.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/TestObjects.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1515,21 +1514,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="29" column="68" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+        <state relative-caret-position="347">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Population.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="422" column="27" selection-start-line="422" selection-start-column="26" selection-end-line="422" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#16338#16339#0" expanded="true" />
+            <element signature="e#16420#16421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/StrictMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="331" column="46" selection-start-line="331" selection-start-column="46" selection-end-line="331" selection-end-column="46" />
+          <folding>
+            <element signature="e#12605#12606#0" expanded="true" />
+            <element signature="e#12658#12659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="e#6060#6061#0" expanded="true" />
+            <element signature="e#6123#6124#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        <state relative-caret-position="135">
+          <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

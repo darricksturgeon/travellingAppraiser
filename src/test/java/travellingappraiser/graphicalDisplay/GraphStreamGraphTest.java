@@ -30,18 +30,27 @@ public class GraphStreamGraphTest {
         int[][] distanceMatrix = TestObjects.randDistanceMatrix(locations);
 
 
-        /*this tests the concept of adding 'house viewing' times,
-         *which would mean that the final home stretch is eliminated.
+        /*this tests the concept of adding 'house viewing' times
+        * by changing the distance of the last leg, making it less important*/
 
+        /*
         for (int i = 0; i < distanceMatrix[0].length; i++) {
-            for (int j = 1; j < distanceMatrix[0].length; j++) {
-                distanceMatrix[i][j] += 400;
-            }
+                distanceMatrix[i][0] -= 3000;
         }
         */
 
+        /*this tests the concept of 'closest houses', by weighting travel to/from home
+        as 0. */
 
-        Population pop = new Population (20, true);
+        for (int i = 0; i < distanceMatrix[0].length; i++) {
+            distanceMatrix[i][0] = 0;
+            distanceMatrix[0][i] = 0;
+        }
+
+
+
+
+        Population pop = new Population (12, true);
         FitnessCalc.setDistanceMatrix(distanceMatrix);
         bestTour = pop.getFittest();
         System.out.println("Initial fitness = " + pop.getFittest().getFitness()
@@ -54,7 +63,7 @@ public class GraphStreamGraphTest {
         Viewer viewer = graph.graph.display(false);
         viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 200; i++) {
             for (int j = 0; j < 200; j++) {
                 pop = Algorithm.evolvePopulation(pop);
             }
