@@ -1,27 +1,21 @@
 package apiClientInterface;
 
-import com.google.maps.model.Distance;
 import com.google.maps.model.DistanceMatrix;
+import com.google.maps.model.DistanceMatrixElement;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by darrick on 5/12/16.
  */
 public class APIClientTest {
-    public APIClient client;
+    public DistanceMatrixAPIClient client;
 
     @Before
     public void setUp() throws Exception {
-        APIClient.setApiKey("");
-        client = new APIClient();
-
-
-
-
+        DistanceMatrixAPIClient.setApiKey("AIzaSyAYfhjI4BX7vUDqtdrzNPjkRtUYH8ptC5o");
+        client = new DistanceMatrixAPIClient();
     }
 
     @After
@@ -32,13 +26,14 @@ public class APIClientTest {
     @Test
     public void getDistanceMatrix() throws Exception {
 
-        String[] origin = new String[]{"Vancouver B.C., Canada"};
-        String[] destination = new String[]{"Portland, Oregon"};
+        String[] origin = new String[]{"Vancouver B.C., Canada", "Seattle, Washington", "Portland, Oregon"};
+        String[] destination = new String[]{"Portland, Oregon", "Seattle, Washington", "Portland, Oregon"};
         DistanceMatrixRequest request = new DistanceMatrixRequest(
                 origin,
                 destination);
         DistanceMatrix matrix = client.getDistanceMatrix(request);
-
+        DistanceMatrixElement element = matrix.rows[0].elements[0];
+        System.out.println(element.duration.inSeconds);
         System.out.println(matrix.getClass().toString());
 
     }

@@ -20,7 +20,6 @@ public class GraphStreamGraphTest {
     public Tour bestTour;
     private GraphStreamGraph graph;
     private double[][] locations;
-    private GraphLock graphLock = new GraphLock();
 
 
     @Test
@@ -56,15 +55,16 @@ public class GraphStreamGraphTest {
         System.out.println("Initial fitness = " + pop.getFittest().getFitness()
                 + " Distance: " + -pop.getFittest().getFitness());
 
-        graph = new GraphStreamGraph(locations, bestTour,graphLock);
+        graph = new GraphStreamGraph(locations, bestTour);
 
         graph.startGraph();
         graph.updateEdges();
         Viewer viewer = graph.graph.display(false);
         viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
+        viewer.enableXYZfeedback(true);
 
-        for (int i = 0; i < 200; i++) {
-            for (int j = 0; j < 200; j++) {
+        for (int i = 0; i < 200000; i++) {
+            for (int j = 0; j < 1; j++) {
                 pop = Algorithm.evolvePopulation(pop);
             }
             bestTour = pop.getFittest();

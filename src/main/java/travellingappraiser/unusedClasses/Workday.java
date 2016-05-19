@@ -1,4 +1,4 @@
-package travellingappraiser;
+package travellingappraiser.unusedClasses;
 
 import java.util.ArrayList;
 import java.util.Iterator;

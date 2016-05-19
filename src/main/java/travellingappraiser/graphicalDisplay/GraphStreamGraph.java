@@ -6,17 +6,18 @@ import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.ui.view.Viewer;
 import travellingappraiser.geneticAlgorithm.Tour;
 
+import java.util.Arrays;
+
 /**
  * Created by darrick on 5/15/16.
  *
  * Initializes, maintains, and displays a graph using a field "tour" shared by GARun.
  */
-public class GraphStreamGraph implements Runnable {
+public class GraphStreamGraph {
 
     //fields for Graphical Display
     public Graph graph;
     private Viewer viewer;
-    private GraphLock graphLock;
 
 
     //fields for Graph G(V,E) computation
@@ -26,8 +27,7 @@ public class GraphStreamGraph implements Runnable {
         private short[] genes;
         private short[] routes;
 
-    public GraphStreamGraph(double[][] locations, Tour tour, GraphLock graphLock) {
-        this.graphLock = graphLock;
+    public GraphStreamGraph(double[][] locations, Tour tour) {
         this.tour = tour;
 
         nodes = new float[locations.length][2];
@@ -39,60 +39,39 @@ public class GraphStreamGraph implements Runnable {
         }
     }
 
-
-
-    public void run() {
-
-        startGraph();
-        addNodes();
-        viewer = graph.display();
-        viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
-        viewer.disableAutoLayout();
-        viewer.enableXYZfeedback(true);
-
-
-        //have to try synchronization with Graphstreamgraphtest
-        synchronized (graphLock) {
-            while (!graphLock.isFinished()) {
-                while (!graphLock.isUpdated()) {
-                    try {
-                        graphLock.wait();
-                    } catch (InterruptedException e) {}
-                }
-                setEdges();
-                updateEdges();
-                viewer.newViewerPipe();
-            }
-        }
-
-        try {
-            wait();
-        } catch(InterruptedException e) {}
-
-    }
-
     public void startGraph() {
 
         graph = new SingleGraph("Location Map");
         addNodes();
     }
 
+    public void newViewer() {
+        this.viewer = this.graph.display(false);
+        viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.CLOSE_VIEWER);
+    }
+
     //takes a set of genes and constructs an array which describes each circuit.
-    private void setEdges() {
+    private boolean setEdges() {
         updateGenes();
 
-        edges = new int[genes.length+routes.length+1];
+        int[] newEdges = new int[genes.length+routes.length+1];
 
         int index = 0;
         int mod = 0;
-        edges[index+mod++] = 0;
+        newEdges[index+mod++] = 0;
 
         for (short s:routes) {
             for (int i = 0; i < s; i++) {
-                edges[index+mod+i] = genes[index+i];
+                newEdges[index+mod+i] = genes[index+i];
             }
             index+=s;
-            edges[index+mod++] = 0;
+            newEdges[index+mod++] = 0;
+        }
+
+        if(Arrays.equals(newEdges,edges)) {return false;}
+        else {
+            edges = newEdges;
+            return true;
         }
 
     }
@@ -105,15 +84,15 @@ public class GraphStreamGraph implements Runnable {
     }
 
     public void updateEdges() {
-        setEdges();
-        while(graph.getEdgeCount()>0) {
-            graph.removeEdge(0);
-        }
+        if(setEdges()) {
+            while (graph.getEdgeCount() > 0) {
+                graph.removeEdge(0);
+            }
 
-        for (int i = 0; i < edges.length-1; i++) {
-            graph.addEdge(""+i,edges[i],edges[i+1]);
+            for (int i = 0; i < edges.length - 1; i++) {
+                graph.addEdge("" + i, edges[i], edges[i + 1]);
+            }
         }
-        graphLock.setUpdated(false);
     }
 
     private void updateGenes() {
@@ -140,6 +119,33 @@ public class GraphStreamGraph implements Runnable {
 
     }
     */
+    /*public void run() {
+
+        startGraph();
+        viewer = graph.display();
+        viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
+        viewer.disableAutoLayout();
+        viewer.enableXYZfeedback(true);
+
+
+        //have to try synchronization with Graphstreamgraphtest
+        synchronized (graphLock) {
+            while (!graphLock.isFinished()) {
+                while (!graphLock.isUpdated()) {
+                    try {
+                        graphLock.wait();
+                    } catch (InterruptedException e) {
+                    }
+                    updateEdges();
+                }
+            }
+        }
+
+        try {
+            wait();
+        } catch(InterruptedException e) {}
+
+    }*/
 
 }
 

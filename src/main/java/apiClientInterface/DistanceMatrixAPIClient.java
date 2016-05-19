@@ -9,13 +9,13 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by darrick on 5/12/16.
  */
-public class APIClient {
+public class DistanceMatrixAPIClient {
 
     private GeoApiContext context = new GeoApiContext();
 
     private static String apiKey;
 
-    public APIClient() {
+    public DistanceMatrixAPIClient() {
         this.context = context
                 .setConnectTimeout(1, TimeUnit.SECONDS)
                 .setReadTimeout(1, TimeUnit.SECONDS)
@@ -44,6 +44,6 @@ public class APIClient {
 
     // Getters and Setters
     public static void setApiKey(String apiKey) {
-        APIClient.apiKey = apiKey;
+        DistanceMatrixAPIClient.apiKey = apiKey;
     }
 }

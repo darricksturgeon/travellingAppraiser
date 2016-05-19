@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad8a6b47-5654-46e2-8d26-4ab5d9d0dcd3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/AddressElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/AddressList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/GeoLocElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/GeolocateAPIClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/LocationElement.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/apiClientInterface/APIClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphLock.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/apiClientInterface/APIClient.java" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixAPIClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/Day.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Day.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/GPS.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/GPS.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/Geolocate.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Geolocate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/Workday.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Workday.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/apiClientInterface/DistanceMatrixRequest.class" afterPath="$PROJECT_DIR$/build/classes/main/apiClientInterface/DistanceMatrixRequest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Defaults.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Defaults.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/apiClientInterface/APIClientTest.class" afterPath="$PROJECT_DIR$/build/classes/test/apiClientInterface/APIClientTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixRequest.java" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java" afterPath="$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" afterPath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
     </list>
     <ignored path="travelling-appraiser.iws" />
@@ -50,35 +68,28 @@
       <file leaf-file-name="GraphStreamGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3365#3366#0" expanded="true" />
-                <element signature="e#3397#3398#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="362">
+              <caret line="70" column="22" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tour.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java">
+      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="true">
+        <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/util/Arrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-              <folding>
-                <element signature="e#6060#6061#0" expanded="true" />
-                <element signature="e#6123#6124#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="2598" column="26" selection-start-line="2598" selection-start-column="26" selection-end-line="2598" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphStreamGraphTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GraphStreamGraphTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+            <state relative-caret-position="377">
+              <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,41 +97,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Algorithm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
+      <file leaf-file-name="APIClientTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="407">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Population.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Population.java">
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="360">
+              <caret line="406" column="61" selection-start-line="406" selection-start-column="61" selection-end-line="406" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FitnessCalc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java">
+      <file leaf-file-name="AddressList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/AddressList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GATest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/GATest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
+            <state relative-caret-position="240">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,37 +129,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Defaults.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java">
+      <file leaf-file-name="GeolocateAPIClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/GeolocateAPIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+            <state relative-caret-position="0">
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/Math.java">
+      <file leaf-file-name="AddressElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/AddressElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="422" column="27" selection-start-line="422" selection-start-column="26" selection-end-line="422" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
-                <element signature="e#16338#16339#0" expanded="true" />
-                <element signature="e#16420#16421#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#870#871#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StrictMath.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/StrictMath.java">
+      <file leaf-file-name="GeoLocElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/GeoLocElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="331" column="46" selection-start-line="331" selection-start-column="46" selection-end-line="331" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocationElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/LocationElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
               <folding>
-                <element signature="e#12605#12606#0" expanded="true" />
-                <element signature="e#12658#12659#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#726#727#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -448,13 +477,11 @@
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Individual.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FullPath.java" />
         <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/apiClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/APIClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/testAnalysis.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Population.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Path.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/PathFinder.java" />
-        <option value="$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/DrawGraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/SolutionGraphic.java" />
         <option value="$PROJECT_DIR$/src/test/java/GATest.java" />
@@ -468,7 +495,6 @@
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/runGraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" />
         <option value="$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
-        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestObjects.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java" />
         <option value="$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/TestObjects.java" />
@@ -476,7 +502,16 @@
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Defaults.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixAPIClient.java" />
+        <option value="$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Workday.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/AddressList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/LocationElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/AddressElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/GeoLocElement.java" />
         <option value="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java" />
       </list>
     </option>
   </component>
@@ -550,6 +585,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travelling-appraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingAppraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingappraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphicalDisplay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travelling-appraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingAppraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingappraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geneticAlgorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travelling-appraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingAppraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiClientInterface" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -648,14 +773,6 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travellingappraiser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geneticAlgorithm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -678,12 +795,16 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiClientInterface" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1093,9 +1214,9 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JUnit.GraphStreamGraphTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GATest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TestObjects" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.APIClientTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.APIClientTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.GATest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TestObjects" />
       </list>
     </recent_temporary>
   </component>
@@ -1161,38 +1282,45 @@
       <option name="project" value="LOCAL" />
       <updated>1463609634455</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Next work is more front-end">
+      <created>1463618787071</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1463618787071</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 19m 31s.xml">
+    <history-entry file="APIClientTest - 2016.05.19 at 11h 17m 57s.xml">
+      <configuration name="APIClientTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="APIClientTest - 2016.05.19 at 11h 29m 19s.xml">
+      <configuration name="APIClientTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="APIClientTest - 2016.05.19 at 15h 25m 40s.xml">
+      <configuration name="APIClientTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GraphStreamGraphTest - 2016.05.19 at 11h 09m 53s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 19m 38s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.19 at 11h 10m 24s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 22m 33s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.19 at 11h 17m 39s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 25m 20s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.19 at 15h 27m 37s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 26m 07s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.19 at 15h 29m 01s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 27m 16s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.19 at 15h 35m 20s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 39m 31s.xml">
-      <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 41m 49s.xml">
-      <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 42m 36s.xml">
-      <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GraphStreamGraphTest - 2016.05.18 at 16h 43m 06s.xml">
+    <history-entry file="GraphStreamGraphTest - 2016.05.19 at 15h 42m 15s.xml">
       <configuration name="GraphStreamGraphTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1208,23 +1336,23 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.5033622" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39247313" sideWeight="0.49663785" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.49663785" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30355427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2144956" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24975985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29166666" sideWeight="0.49663785" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29166666" sideWeight="0.49663785" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1271,17 +1399,12 @@
     <MESSAGE value="Fixed all bugs.  In terms of the algorithm, I want to table it until we can get some graphics in." />
     <MESSAGE value="Graphics up and running." />
     <MESSAGE value="Sorted out a duplicate class problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorted out a duplicate class problem" />
+    <MESSAGE value="Next work is more front-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Next work is more front-end" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/apiClientInterface/APIClient.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java</url>
           <line>140</line>
@@ -1300,8 +1423,20 @@
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/apiClientInterface/AddressElement.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="63" />
+      <option name="time" value="66" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1310,48 +1445,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/APIClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding>
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1244#1245#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/JavaDevelopment/jdk1.8.0_91/src.zip!/java/util/Arrays.java" />
-    <entry file="jar://$USER_HOME$/Documents/JavaDevelopment/jdk1.8.0_91/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/testAnalysis.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/PathFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Path.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Documents/JavaDevelopment/jdk1.8.0_91/src.zip!/java/lang/Math.java" />
-    <entry file="file://$PROJECT_DIR$/hs_err_pid5130.log" />
-    <entry file="jar://$USER_HOME$/Documents/JavaDevelopment/jdk1.8.0_91/src.zip!/java/awt/Container.java" />
-    <entry file="jar://$USER_HOME$/Documents/JavaDevelopment/jdk1.8.0_91/src.zip!/java/awt/Graphics2D.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/SolutionGraph.java" />
-    <entry file="jar://$USER_HOME$/Documents/JavaDevelopment/jdk1.8.0_91/src.zip!/java/awt/Graphics.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/WindowLayout.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/Verteces.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.graphstream/gs-core/1.3/2d66dc5dd3fe52e32948617341bed9805486829b/gs-core-1.3-sources.jar!/org/graphstream/graph/implementations/AbstractGraph.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/GraphWindow.java" />
@@ -1374,7 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="356" column="0" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,27 +1485,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphWindow.java" />
     <entry file="file://$PROJECT_DIR$/.idea/modules/travelling-appraiser_main.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1422,7 +1497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5310">
           <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,7 +1547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,42 +1554,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/TestObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/TestObjects.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/TestObjects.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/GATest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="210">
           <caret line="14" column="73" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="585">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
@@ -1532,7 +1595,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
+        <state relative-caret-position="300">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
@@ -1540,33 +1603,186 @@
     </entry>
     <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="5565">
           <caret line="422" column="27" selection-start-line="422" selection-start-column="26" selection-end-line="422" selection-end-column="30" />
           <folding>
-            <element signature="e#16338#16339#0" expanded="true" />
-            <element signature="e#16420#16421#0" expanded="true" />
+            <element signature="e#0#92217#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5367#5368#0" expanded="false" />
+            <element signature="e#5448#5449#0" expanded="false" />
+            <element signature="e#5875#5876#0" expanded="false" />
+            <element signature="e#5956#5957#0" expanded="false" />
+            <element signature="e#6491#6492#0" expanded="false" />
+            <element signature="e#6572#6573#0" expanded="false" />
+            <element signature="e#7218#7219#0" expanded="false" />
+            <element signature="e#7300#7301#0" expanded="false" />
+            <element signature="e#7835#7836#0" expanded="false" />
+            <element signature="e#7917#7918#0" expanded="false" />
+            <element signature="e#8525#8526#0" expanded="false" />
+            <element signature="e#8607#8608#0" expanded="false" />
+            <element signature="e#9016#9017#0" expanded="false" />
+            <element signature="e#9058#9059#0" expanded="false" />
+            <element signature="e#9571#9572#0" expanded="false" />
+            <element signature="e#9613#9614#0" expanded="false" />
+            <element signature="e#10333#10334#0" expanded="false" />
+            <element signature="e#10414#10415#0" expanded="false" />
+            <element signature="e#11119#11120#0" expanded="false" />
+            <element signature="e#11200#11201#0" expanded="false" />
+            <element signature="e#11999#12000#0" expanded="false" />
+            <element signature="e#12082#12083#0" expanded="false" />
+            <element signature="e#14073#14074#0" expanded="false" />
+            <element signature="e#14114#14115#0" expanded="false" />
+            <element signature="e#17181#17182#0" expanded="false" />
+            <element signature="e#17264#17265#0" expanded="false" />
+            <element signature="e#18056#18057#0" expanded="false" />
+            <element signature="e#18138#18139#0" expanded="false" />
+            <element signature="e#32010#32011#0" expanded="false" />
+            <element signature="e#32095#32096#0" expanded="false" />
+            <element signature="e#45577#45578#0" expanded="false" />
+            <element signature="e#45622#45623#0" expanded="false" />
+            <element signature="e#46227#46228#0" expanded="false" />
+            <element signature="e#46266#46267#0" expanded="false" />
+            <element signature="e#46871#46872#0" expanded="false" />
+            <element signature="e#46910#46911#0" expanded="false" />
+            <element signature="e#47714#47715#0" expanded="false" />
+            <element signature="e#47763#47764#0" expanded="false" />
+            <element signature="e#48572#48573#0" expanded="false" />
+            <element signature="e#48621#48622#0" expanded="false" />
+            <element signature="e#49043#49044#0" expanded="false" />
+            <element signature="e#49082#49083#0" expanded="false" />
+            <element signature="e#49505#49506#0" expanded="false" />
+            <element signature="e#49544#49545#0" expanded="false" />
+            <element signature="e#52232#52233#0" expanded="false" />
+            <element signature="e#52271#52272#0" expanded="false" />
+            <element signature="e#52695#52696#0" expanded="false" />
+            <element signature="e#52734#52735#0" expanded="false" />
+            <element signature="e#59392#59393#0" expanded="false" />
+            <element signature="e#59463#59464#0" expanded="false" />
+            <element signature="e#60118#60119#0" expanded="false" />
+            <element signature="e#60190#60191#0" expanded="false" />
+            <element signature="e#61077#61078#0" expanded="false" />
+            <element signature="e#61118#61119#0" expanded="false" />
+            <element signature="e#61947#61948#0" expanded="false" />
+            <element signature="e#61988#61989#0" expanded="false" />
+            <element signature="e#63429#63430#0" expanded="false" />
+            <element signature="e#63470#63471#0" expanded="false" />
+            <element signature="e#64310#64311#0" expanded="false" />
+            <element signature="e#64355#64356#0" expanded="false" />
+            <element signature="e#65701#65702#0" expanded="false" />
+            <element signature="e#65743#65744#0" expanded="false" />
+            <element signature="e#66828#66829#0" expanded="false" />
+            <element signature="e#66870#66871#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/lang/StrictMath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="4605">
           <caret line="331" column="46" selection-start-line="331" selection-start-column="46" selection-end-line="331" selection-end-column="46" />
           <folding>
-            <element signature="e#12605#12606#0" expanded="true" />
-            <element signature="e#12658#12659#0" expanded="true" />
+            <element signature="e#0#64468#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#13419#13420#0" expanded="false" />
+            <element signature="e#13473#13474#0" expanded="false" />
+            <element signature="e#26332#26333#0" expanded="false" />
+            <element signature="e#26368#26369#0" expanded="false" />
+            <element signature="e#27296#27297#0" expanded="false" />
+            <element signature="e#27332#27333#0" expanded="false" />
+            <element signature="e#28559#28560#0" expanded="false" />
+            <element signature="e#28644#28645#0" expanded="false" />
+            <element signature="e#29035#29036#0" expanded="false" />
+            <element signature="e#29077#29078#0" expanded="false" />
+            <element signature="e#29473#29474#0" expanded="false" />
+            <element signature="e#29515#29516#0" expanded="false" />
+            <element signature="e#29950#29951#0" expanded="false" />
+            <element signature="e#29997#29998#0" expanded="false" />
+            <element signature="e#30437#30438#0" expanded="false" />
+            <element signature="e#30484#30485#0" expanded="false" />
+            <element signature="e#30889#30890#0" expanded="false" />
+            <element signature="e#30936#30937#0" expanded="false" />
+            <element signature="e#31346#31347#0" expanded="false" />
+            <element signature="e#31393#31394#0" expanded="false" />
+            <element signature="e#31788#31789#0" expanded="false" />
+            <element signature="e#31833#31834#0" expanded="false" />
+            <element signature="e#32782#32783#0" expanded="false" />
+            <element signature="e#32824#32825#0" expanded="false" />
+            <element signature="e#33771#33772#0" expanded="false" />
+            <element signature="e#33813#33814#0" expanded="false" />
+            <element signature="e#34733#34734#0" expanded="false" />
+            <element signature="e#34776#34777#0" expanded="false" />
+            <element signature="e#35703#35704#0" expanded="false" />
+            <element signature="e#35745#35746#0" expanded="false" />
+            <element signature="e#36352#36353#0" expanded="false" />
+            <element signature="e#36386#36387#0" expanded="false" />
+            <element signature="e#36993#36994#0" expanded="false" />
+            <element signature="e#37027#37028#0" expanded="false" />
+            <element signature="e#37831#37832#0" expanded="false" />
+            <element signature="e#37865#37866#0" expanded="false" />
+            <element signature="e#38674#38675#0" expanded="false" />
+            <element signature="e#38708#38709#0" expanded="false" />
+            <element signature="e#39130#39131#0" expanded="false" />
+            <element signature="e#39167#39168#0" expanded="false" />
+            <element signature="e#39593#39594#0" expanded="false" />
+            <element signature="e#39630#39631#0" expanded="false" />
+            <element signature="e#40330#40331#0" expanded="false" />
+            <element signature="e#40367#40368#0" expanded="false" />
+            <element signature="e#41071#41072#0" expanded="false" />
+            <element signature="e#41108#41109#0" expanded="false" />
+            <element signature="e#41529#41530#0" expanded="false" />
+            <element signature="e#41566#41567#0" expanded="false" />
+            <element signature="e#41990#41991#0" expanded="false" />
+            <element signature="e#42027#42028#0" expanded="false" />
+            <element signature="e#42729#42730#0" expanded="false" />
+            <element signature="e#42766#42767#0" expanded="false" />
+            <element signature="e#43471#43472#0" expanded="false" />
+            <element signature="e#43508#43509#0" expanded="false" />
+            <element signature="e#44523#44524#0" expanded="false" />
+            <element signature="e#44557#44558#0" expanded="false" />
+            <element signature="e#45566#45567#0" expanded="false" />
+            <element signature="e#45600#45601#0" expanded="false" />
+            <element signature="e#46255#46256#0" expanded="false" />
+            <element signature="e#46292#46293#0" expanded="false" />
+            <element signature="e#46947#46948#0" expanded="false" />
+            <element signature="e#46984#46985#0" expanded="false" />
+            <element signature="e#53999#54000#0" expanded="false" />
+            <element signature="e#54041#54042#0" expanded="false" />
+            <element signature="e#54567#54568#0" expanded="false" />
+            <element signature="e#54609#54610#0" expanded="false" />
+            <element signature="e#56269#56270#0" expanded="false" />
+            <element signature="e#56324#56325#0" expanded="false" />
+            <element signature="e#57907#57908#0" expanded="false" />
+            <element signature="e#57962#57963#0" expanded="false" />
+            <element signature="e#58812#58813#0" expanded="false" />
+            <element signature="e#58849#58850#0" expanded="false" />
+            <element signature="e#59695#59696#0" expanded="false" />
+            <element signature="e#59732#59733#0" expanded="false" />
+            <element signature="e#60588#60589#0" expanded="false" />
+            <element signature="e#60627#60628#0" expanded="false" />
+            <element signature="e#61479#61480#0" expanded="false" />
+            <element signature="e#61518#61519#0" expanded="false" />
+            <element signature="e#62945#62946#0" expanded="false" />
+            <element signature="e#62994#62995#0" expanded="false" />
+            <element signature="e#64415#64416#0" expanded="false" />
+            <element signature="e#64464#64465#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
+        <state relative-caret-position="660">
           <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding>
-            <element signature="e#6060#6061#0" expanded="true" />
-            <element signature="e#6123#6124#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1129#1130#0" expanded="false" />
+            <element signature="e#1176#1177#0" expanded="false" />
+            <element signature="e#4180#4181#0" expanded="false" />
+            <element signature="e#4215#4216#0" expanded="false" />
+            <element signature="e#5702#5703#0" expanded="false" />
+            <element signature="e#5754#5755#0" expanded="false" />
+            <element signature="e#5804#5805#0" expanded="false" />
+            <element signature="e#5848#5849#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1579,25 +1795,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Day.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Geolocate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/GPS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/unusedClasses/Workday.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixAPIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="406" column="61" selection-start-line="406" selection-start-column="61" selection-end-line="406" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/GeolocateAPIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/LocationElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/AddressElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/GeoLocElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/apiClientInterface/AddressList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3365#3366#0" expanded="true" />
-            <element signature="e#3397#3398#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/apiClientInterface/APIClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+        <state relative-caret-position="377">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/graphicalDisplay/GraphStreamGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Documents/JavaProjects/jdk1.8.0_92/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="2598" column="26" selection-start-line="2598" selection-start-column="26" selection-end-line="2598" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,40 +1,50 @@
 package apiClientInterface;
 
+import java.util.ArrayList;
+
 /**
  * Created by darrick on 5/12/16.
+ *
+ * Object for the purpose of querying Google Maps for travel durations.
+ * Google Distance Matrix API limits responses to 100 elements, where
+ * an element is any origin, destination pair.  Therefore
+ * origins x destinations should not exceed 100.
  */
 public class DistanceMatrixRequest {
 
-    private String[] origins;
-    private String[] destinations;
+    private ArrayList<String> oriList = new ArrayList<>();
+    private ArrayList<String> destList = new ArrayList<>();
 
     /*
     private boolean asLatLong;
     */
 
-    public DistanceMatrixRequest() {
-
-    }
+    public DistanceMatrixRequest() {}
 
     public DistanceMatrixRequest(String[] origins, String[] destinations) {
-        this.origins = origins;
-        this.destinations = destinations;
+        addOrigins(origins);
+        addDestinations(destinations);
+    }
+
+    public void addOrigins(String[] o) {
+        oriList.ensureCapacity(oriList.size()+o.length);
+
+        for (String s: o) {oriList.add(s);}
+    }
+
+    public void addDestinations(String[] d) {
+        destList.ensureCapacity(destList.size()+d.length);
+
+        for (String s: d) {destList.add(s);}
+
     }
 
     public String[] getOrigins() {
-        return origins;
-    }
-
-    public void setOrigins(String[] origins) {
-        this.origins = origins;
+        return oriList.toArray(new String[0]);
     }
 
     public String[] getDestinations() {
-        return destinations;
-    }
-
-    public void setDestinations(String[] destinations) {
-        this.destinations = destinations;
+        return destList.toArray(new String[0]);
     }
 
     /*

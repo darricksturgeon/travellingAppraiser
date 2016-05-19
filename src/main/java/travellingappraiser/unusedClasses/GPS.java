@@ -1,4 +1,4 @@
-package travellingappraiser;
+package travellingappraiser.unusedClasses;
 
 /**
  * Created by darrick on 5/9/16.
