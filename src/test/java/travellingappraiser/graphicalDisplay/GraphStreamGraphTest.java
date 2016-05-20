@@ -41,15 +41,18 @@ public class GraphStreamGraphTest {
         /*this tests the concept of 'closest houses', by weighting travel to/from home
         as 0. */
 
+        /*
         for (int i = 0; i < distanceMatrix[0].length; i++) {
             distanceMatrix[i][0] = 0;
             distanceMatrix[0][i] = 0;
         }
+        */
 
 
 
 
-        Population pop = new Population (12, true);
+
+        Population pop = new Population (20, true);
         FitnessCalc.setDistanceMatrix(distanceMatrix);
         bestTour = pop.getFittest();
         System.out.println("Initial fitness = " + pop.getFittest().getFitness()

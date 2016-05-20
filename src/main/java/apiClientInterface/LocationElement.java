@@ -19,6 +19,9 @@ public abstract class LocationElement {
     }
 
     @Override
+    public abstract String toString();
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

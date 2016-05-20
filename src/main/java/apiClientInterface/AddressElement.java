@@ -10,10 +10,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class AddressElement extends LocationElement {
 
-    private String street;
-    private String city;
-    private String state;
-    private String zip;
+    private String street = "";
+    private String city = "";
+    private String state = "";
+    private String zip = "";
 
 
     public AddressElement() {}
@@ -58,6 +58,13 @@ public class AddressElement extends LocationElement {
         this.zip = zip;
     }
 
+    @Override
+    public String toString() {
+        return getStreet() + " "
+                + getCity() + ", "
+                + getState() + " "
+                +getZip();
+    }
 }
 
 
