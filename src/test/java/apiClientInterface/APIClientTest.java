@@ -14,7 +14,7 @@ public class APIClientTest {
 
     @Before
     public void setUp() throws Exception {
-        DistanceMatrixAPIClient.setApiKey("AIzaSyAYfhjI4BX7vUDqtdrzNPjkRtUYH8ptC5o");
+        //DistanceMatrixAPIClient.setApiKey();
         client = new DistanceMatrixAPIClient();
     }
 
