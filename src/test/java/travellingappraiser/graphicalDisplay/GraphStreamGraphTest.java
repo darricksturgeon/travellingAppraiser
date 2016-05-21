@@ -66,7 +66,7 @@ public class GraphStreamGraphTest {
         viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
         viewer.enableXYZfeedback(true);
 
-        for (int i = 0; i < 200000; i++) {
+        for (int i = 0; i < 2000000; i++) {
             for (int j = 0; j < 1; j++) {
                 pop = Algorithm.evolvePopulation(pop);
             }

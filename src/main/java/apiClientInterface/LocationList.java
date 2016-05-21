@@ -43,4 +43,8 @@ public class LocationList {
         return locList.get(id);
 
     }
+
+    public int size() {
+        return locList.size();
+    }
 }
