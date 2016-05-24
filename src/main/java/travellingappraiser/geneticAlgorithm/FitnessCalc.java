@@ -1,6 +1,6 @@
 package travellingappraiser.geneticAlgorithm;
 
-import static travellingappraiser.geneticAlgorithm.Parameters.ROUTES;
+import static travellingappraiser.geneticAlgorithm.GAParameters.ROUTES;
 
 /**
  * Created by darrick on 5/10/16.

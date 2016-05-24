@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static travellingappraiser.geneticAlgorithm.Parameters.*;
+import static travellingappraiser.geneticAlgorithm.GAParameters.*;
 
 
 /**
@@ -21,7 +21,7 @@ import static travellingappraiser.geneticAlgorithm.Parameters.*;
  */
 
 public class Tour {
-    private short[] genes = new short[TOTAL_LOCATIONS + ROUTES];
+    private short[] genes = new short[getTotalLocations() + getROUTES()];
     // Cache
     private double fitness = 0;
 
@@ -35,25 +35,25 @@ public class Tour {
     public void generateIndividual() {
 
         this.shuffleGenes();
-        if(!customRoute) {
-            for (int i = 0; i < ROUTES; i++) {
-                setRoute(i, (short) PATH_LENGTH);
+        if(!isCustomRoute()) {
+            for (int i = 0; i < getROUTES(); i++) {
+                setRoute(i, (short) getPathLength());
             }
 
-            if (TOTAL_LOCATIONS % PATH_LENGTH != 0) {
-                setRoute(ROUTES - 1, (short) (TOTAL_LOCATIONS % PATH_LENGTH));
+            if (getTotalLocations() % getPathLength() != 0) {
+                setRoute(getROUTES() - 1, (short) (getTotalLocations() % getPathLength()));
             }
         } else {
-            for (int i = 0; i < customRouteArray.length; i++) {
-                setRoute(i, (short) customRouteArray[i]);
+            for (int i = 0; i < getCustomRouteArray().length; i++) {
+                setRoute(i, (short) getCustomRouteArray()[i]);
             }
         }
 
     }
 
     private void shuffleGenes() {
-        short[] geneArray = new short[TOTAL_LOCATIONS];
-        for (int i = 0; i < TOTAL_LOCATIONS; i++) {
+        short[] geneArray = new short[getTotalLocations()];
+        for (int i = 0; i < getTotalLocations(); i++) {
             geneArray[i] = (short) (i + 1);
         }
         //Fisher-Yates algorithm for shuffling a set.  We only shuffle locations, not break data.
@@ -65,7 +65,7 @@ public class Tour {
             geneArray[i] = a;
         }
 
-        for (int i = 0; i < TOTAL_LOCATIONS; i++) {
+        for (int i = 0; i < getTotalLocations(); i++) {
             this.setGene(i, geneArray[i]);
         }
     }
@@ -73,7 +73,7 @@ public class Tour {
     //takes a subroute and finds the best possible position for the subroute.
     public Tour bestInsertion(short[] subroute) {
 
-        ArrayList<Tour> possibleInsertions = new ArrayList<>(TOTAL_LOCATIONS + 1);
+        ArrayList<Tour> possibleInsertions = new ArrayList<>(getTotalLocations() + 1);
         /*
         if we have an array size L, split into M parts of length given by getRouteData...
         each Route is length K, then for all M s.t. subroute.length <= k, there are
@@ -150,8 +150,8 @@ public class Tour {
     public short[] getRouteData() {
         return Arrays.copyOfRange(
                 this.genes,
-                TOTAL_LOCATIONS,
-                TOTAL_LOCATIONS+ ROUTES);
+                getTotalLocations(),
+                getTotalLocations()+ getROUTES());
     }
 
     //returns specified route
@@ -179,12 +179,12 @@ public class Tour {
     }
 
     public short getRouteLength(int i) {
-        return this.genes[TOTAL_LOCATIONS+i];
+        return this.genes[getTotalLocations()+i];
     }
 
     /* Public methods */
     public int size() {
-        return genes.length - ROUTES;
+        return genes.length - getROUTES();
     }
 
     public double getFitness() {
@@ -195,7 +195,7 @@ public class Tour {
     }
 
     public void setRoute(int index, short routelength) {
-        this.genes[TOTAL_LOCATIONS+index] = routelength;
+        this.genes[getTotalLocations()+index] = routelength;
     }
 
 
@@ -207,7 +207,7 @@ public class Tour {
         }
         geneString+= "Routes: ";
 
-        for (int i = 0; i < ROUTES; i++) {
+        for (int i = 0; i < getROUTES(); i++) {
             geneString+= getRouteLength(i);
         }
         return geneString;
@@ -237,9 +237,7 @@ public class Tour {
     //returns just the location information, without route lengths.
     public short[] getPathing() {
         short[] pathing = new short[TOTAL_LOCATIONS];
-        for (int i = 0; i < pathing.length; i++) {
-            pathing[i] = genes[i];
-        }
+        System.arraycopy(genes, 0, pathing, 0, pathing.length);
         return pathing;
     }
 }

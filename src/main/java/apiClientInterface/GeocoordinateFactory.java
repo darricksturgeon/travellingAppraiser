@@ -20,12 +20,11 @@ public class GeocoordinateFactory {
 
         for (int i = 0; i < locations.length; i++) {
             LatLng latLng = apiClient
-                    .getGeocodingResult(locations[i]
-                            .toString())[0]
+                    .getGeocodingResult(locations[i])[0]
                     .geometry.location;
 
             geoCoordinates[i][0] = latLng.lat;
-            geoCoordinates[i][0] = latLng.lng;
+            geoCoordinates[i][1] = latLng.lng;
         }
 
         return geoCoordinates;

@@ -4,7 +4,7 @@ import org.graphstream.ui.view.Viewer;
 import org.junit.Test;
 import travellingappraiser.geneticAlgorithm.*;
 
-import static travellingappraiser.geneticAlgorithm.Parameters.TOTAL_LOCATIONS;
+import static travellingappraiser.geneticAlgorithm.GAParameters.TOTAL_LOCATIONS;
 
 /**
  * Created by darrick on 5/15/16.
@@ -12,7 +12,7 @@ import static travellingappraiser.geneticAlgorithm.Parameters.TOTAL_LOCATIONS;
 public class GraphStreamGraphTest {
 
 
-    public Tour bestTour;
+    private Tour bestTour;
     private GraphStreamGraph graph;
     private double[][] locations;
 

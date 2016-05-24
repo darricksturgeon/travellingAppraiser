@@ -3,23 +3,23 @@ package travellingappraiser.geneticAlgorithm;
 /**
  * Created by darrick on 5/11/16.
  */
-public class Parameters {
+public class GAParameters {
 
-    public Parameters() {}
+    public GAParameters() {}
 
     public static String API_KEY = "AIzaSyAYfhjI4BX7vUDqtdrzNPjkRtUYH8ptC5o";
 
-    public static int TOTAL_LOCATIONS =1000;
-    static int PATH_LENGTH=1000;
-    static int ROUTES = (int) Math.ceil((double) TOTAL_LOCATIONS / PATH_LENGTH);
+    public static int TOTAL_LOCATIONS;
+    static int PATH_LENGTH = 5;
+    static int ROUTES;
     static int populationSize = 20;
     static int generations = 200000;
 
-    static boolean matrixIsDirected;
-    static boolean noOriginWeight;
-    static boolean customRoute;
-    static int[] customRouteArray;
-    static int[][] distanceMatrix;
+    private static boolean matrixUndirected;
+    private static boolean noOriginWeight;
+    private static boolean customRoute=false;
+    private static int[] customRouteArray;
+    private static int[][] distanceMatrix;
     static double[][] geocoordinates;
 
     public static double[][] getGeocoordinates() {
@@ -27,7 +27,7 @@ public class Parameters {
     }
 
     public static void setGeocoordinates(double[][] geocoordinates) {
-        Parameters.geocoordinates = geocoordinates;
+        GAParameters.geocoordinates = geocoordinates;
     }
 
     public static boolean isCustomRoute() {
@@ -35,7 +35,7 @@ public class Parameters {
     }
 
     public static void setCustomRoute(boolean customRoute) {
-        Parameters.customRoute = customRoute;
+        GAParameters.customRoute = customRoute;
     }
 
     public static int[] getCustomRouteArray() {
@@ -43,7 +43,7 @@ public class Parameters {
     }
 
     public static void setCustomRouteArray(int[] customRouteArray) {
-        Parameters.customRouteArray = customRouteArray;
+        GAParameters.customRouteArray = customRouteArray;
     }
 
     public static int[][] getDistanceMatrix() {
@@ -51,7 +51,7 @@ public class Parameters {
     }
 
     public static void setDistanceMatrix(int[][] distanceMatrix) {
-        Parameters.distanceMatrix = distanceMatrix;
+        GAParameters.distanceMatrix = distanceMatrix;
     }
 
     public static String getApiKey() {
@@ -68,6 +68,7 @@ public class Parameters {
 
     public static void setTotalLocations(int totalLocations) {
         TOTAL_LOCATIONS = totalLocations;
+        ROUTES = (int) Math.ceil((double) TOTAL_LOCATIONS / PATH_LENGTH);
     }
 
     public static int getPathLength() {
@@ -83,15 +84,15 @@ public class Parameters {
     }
 
     public static void setROUTES(int ROUTES) {
-        Parameters.ROUTES = ROUTES;
+        GAParameters.ROUTES = ROUTES;
     }
 
-    public static boolean isMatrixIsDirected() {
-        return matrixIsDirected;
+    public static boolean isMatrixUndirected() {
+        return matrixUndirected;
     }
 
-    public static void setMatrixIsDirected(boolean matrixIsDirected) {
-        Parameters.matrixIsDirected = matrixIsDirected;
+    public static void setMatrixUndirected(boolean matrixUndirected) {
+        GAParameters.matrixUndirected = matrixUndirected;
     }
 
     public static boolean isNoOriginWeight() {
@@ -99,7 +100,7 @@ public class Parameters {
     }
 
     public static void setNoOriginWeight(boolean noOriginWeight) {
-        Parameters.noOriginWeight = noOriginWeight;
+        GAParameters.noOriginWeight = noOriginWeight;
     }
 
     //function to create file which stores defaults? ...

@@ -11,6 +11,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import travellingappraiser.geneticAlgorithm.GAParameters;
+import travellingappraiser.geneticAlgorithm.RunGA;
 
 import java.util.ArrayList;
 
@@ -43,7 +45,7 @@ public class Main extends Application {
 
         //create a list for containing submitted addresses
         final ArrayList addresses = new ArrayList();
-        final ListView<String> list = new ListView<String>();
+        final ListView<String> list = new ListView<>();
         ObservableList<String> items = FXCollections.observableArrayList (addresses);
         list.setItems(items);
 
@@ -106,6 +108,7 @@ public class Main extends Application {
             }
         });
         submit.setOnAction(event-> {
+            GAParameters.setTotalLocations(items.size());
             items.add(items.get(0));
             items.set(0,homeaddr.getText());
             InitializeData.main(items.toArray(new String[0]));
@@ -115,6 +118,32 @@ public class Main extends Application {
             addAddress.setDisable(true);
             removeAddress.setDisable(true);
             submit.setDisable(true);
+        });
+        run.setOnAction(event -> {
+            GAParameters.setMatrixUndirected(dirOption.isSelected());
+            GAParameters.setNoOriginWeight(oriOption.isSelected());
+
+            //checks for an input in custom route, and enters it.
+            if(!route.getText().isEmpty()) {
+                String[] numberStrs = route.getText().split("[ ,]+");
+
+                int[] numbers = new int[numberStrs.length];
+                for(int i = 0;i < numberStrs.length;i++) {
+                    numbers[i] = Integer.parseInt(numberStrs[i]);
+                }
+
+                int total =0;
+                for (int k: numbers) { total+=k; }
+                if (total==GAParameters.getTotalLocations()) {
+                    GAParameters.setCustomRoute(true);
+                    GAParameters.setCustomRouteArray(numbers);
+                    GAParameters.setROUTES(numbers.length);
+                } else {
+                    System.out.print("Error with custom route, check that the sum = locations to visit");
+                }
+            }
+
+            new RunGA().run();
         });
 
         Pane mylayout = new Pane();

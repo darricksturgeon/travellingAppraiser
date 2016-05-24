@@ -2,7 +2,7 @@ package travellingappraiser.geneticAlgorithm;
 
 import org.junit.Test;
 
-import static travellingappraiser.geneticAlgorithm.Parameters.TOTAL_LOCATIONS;
+import static travellingappraiser.geneticAlgorithm.GAParameters.TOTAL_LOCATIONS;
 
 /**
  * Created by darrick on 5/14/16.

@@ -6,7 +6,7 @@ import com.google.maps.model.GeocodingResult;
 
 import java.util.concurrent.TimeUnit;
 
-import static travellingappraiser.geneticAlgorithm.Parameters.API_KEY;
+import static travellingappraiser.geneticAlgorithm.GAParameters.API_KEY;
 
 /**
  * Created by darrick on 5/20/16.
@@ -26,9 +26,8 @@ public class GeocodingAPIClient {
     public GeocodingResult[] getGeocodingResult(String address) {
 
         try {
-            GeocodingResult[] result = GeocodingApi.newRequest(context)
+            return GeocodingApi.newRequest(context)
                     .address(address).await();
-            return result;
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Error getting geocoordinates for: " + address);

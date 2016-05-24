@@ -6,7 +6,7 @@ import com.google.maps.model.DistanceMatrix;
 
 import java.util.concurrent.TimeUnit;
 
-import static travellingappraiser.geneticAlgorithm.Parameters.API_KEY;
+import static travellingappraiser.geneticAlgorithm.GAParameters.API_KEY;
 
 /**
  * Created by darrick on 5/12/16.
@@ -27,11 +27,10 @@ public class DistanceMatrixAPIClient {
     public DistanceMatrix getDistanceMatrix(DistanceMatrixRequest request) {
 
         try {
-            DistanceMatrix matrix = DistanceMatrixApi.newRequest(context)
+            return DistanceMatrixApi.newRequest(context)
                     .origins(request.getOrigins())
                     .destinations(request.getDestinations())
                     .await();
-            return matrix;
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Error getting Distance Matrix");

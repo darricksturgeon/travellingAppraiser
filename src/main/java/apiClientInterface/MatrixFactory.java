@@ -33,7 +33,7 @@ public class MatrixFactory {
         for (int i = 0; i < locations.length-1; i++) {
             DistanceMatrixRequest request = new DistanceMatrixRequest();
 
-            request.addOrigins(new String[]{locations[i].toString()});
+            request.addOrigins(new String[]{locations[i]});
             request.addDestinations(locationSublist(i+1,locations.length));
 
             DistanceMatrix reply = apiClient.getDistanceMatrix(request);
@@ -49,7 +49,7 @@ public class MatrixFactory {
         for (int i = 0; i < locations.length-1; i++) {
             DistanceMatrixRequest request = new DistanceMatrixRequest();
 
-            request.addDestinations(new String[]{locations[i].toString()});
+            request.addDestinations(new String[]{locations[i]});
             request.addOrigins(locationSublist(i+1,locations.length));
 
             DistanceMatrix reply = apiClient.getDistanceMatrix(request);
@@ -68,7 +68,7 @@ public class MatrixFactory {
         String[] subList = new String[end-index];
 
         for (int i = 0; i+index < end; i++) {
-            subList[i] = locations[i+index].toString();
+            subList[i] = locations[i+index];
         }
 
         return subList;
@@ -91,14 +91,23 @@ public class MatrixFactory {
 
     }
 
-    private void Undirected2Directed() {
+    public static int[][] Directed2Undirected(int[][] matrix) {
 
-        for (int i = 0; i < locations.length; i++) {
-            for (int j = i+1; j < locations.length; j++) {
-                fullMatrix[i][j] = (fullMatrix[i][j]+fullMatrix[j][i])/2;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = i+1; j < matrix.length; j++) {
+                matrix[i][j] = (matrix[i][j]+matrix[j][i])/2;
+                matrix[j][i] = matrix[i][j];
             }
         }
+        return matrix;
+    }
 
+    public static int[][] removeOriginWeight(int[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            matrix[0][i] = 0;
+            matrix[i][0] = 0;
+        }
+        return matrix;
     }
 
 }

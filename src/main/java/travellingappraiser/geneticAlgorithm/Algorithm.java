@@ -1,6 +1,6 @@
 package travellingappraiser.geneticAlgorithm;
 
-import static travellingappraiser.geneticAlgorithm.Parameters.*;
+import static travellingappraiser.geneticAlgorithm.GAParameters.*;
 
 /**
  * Created by darrick on 5/10/16.
@@ -22,7 +22,7 @@ public class Algorithm {
         Population newPopulation = new Population(pop.size(), false);
 
         // save fittest
-        int elitismOffset=0;
+        int elitismOffset;
         if (elitism) {
             newPopulation.saveIndividual(0,pop.getFittest());
             elitismOffset = 1;
