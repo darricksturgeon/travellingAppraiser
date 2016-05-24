@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad8a6b47-5654-46e2-8d26-4ab5d9d0dcd3" name="Default" comment="update 5/24.  Operational!  First fully functional version.  Still needs some quality of life improvements to be sure.">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Parameters.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" />
+    <list default="true" id="ad8a6b47-5654-46e2-8d26-4ab5d9d0dcd3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/RunGA.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/RunGA.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/GUI/Main.java" afterPath="$PROJECT_DIR$/src/main/java/GUI/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixAPIClient.java" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/DistanceMatrixAPIClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/apiClientInterface/GeocodingAPIClient.java" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/GeocodingAPIClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/apiClientInterface/GeocoordinateFactory.java" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/GeocoordinateFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/apiClientInterface/InitializeData.java" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/InitializeData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/apiClientInterface/MatrixFactory.java" afterPath="$PROJECT_DIR$/src/main/java/apiClientInterface/MatrixFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/FitnessCalc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/GATest.java" afterPath="$PROJECT_DIR$/src/test/java/travellingappraiser/geneticAlgorithm/GATest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" afterPath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" />
     </list>
     <ignored path="travelling-appraiser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tour.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Tour.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
@@ -93,14 +81,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GAParameters.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GAParameters.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+            <state relative-caret-position="105">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding>
-                <element signature="e#2526#2527#0" expanded="true" />
-                <element signature="e#2563#2564#0" expanded="true" />
+                <element signature="e#2487#2488#0" expanded="true" />
+                <element signature="e#2524#2525#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -479,7 +467,6 @@
         <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/GeocoorinateFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/InitializeData.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Parameters.java" />
-        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" />
         <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/GeocoordinateFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" />
@@ -489,6 +476,7 @@
         <option value="$PROJECT_DIR$/src/main/java/apiClientInterface/MatrixFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" />
       </list>
     </option>
   </component>
@@ -1362,7 +1350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464072778603</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update 5/24.  Operational!  First fully functional version.  Still needs some quality of life improvements to be sure.">
+      <created>1464131669170</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1464131669170</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1399,11 +1394,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1087" height="840" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39247313" sideWeight="0.5033622" order="7" side_tool="true" content_ui="tabs" />
@@ -1741,8 +1736,8 @@
         <state relative-caret-position="75">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2563#2564#0" expanded="true" />
+            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1928,17 +1923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
-          <folding>
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2563#2564#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -1956,6 +1940,17 @@
           <folding>
             <element signature="e#6212#6213#0" expanded="true" />
             <element signature="e#6279#6280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#2487#2488#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
           </folding>
         </state>
       </provider>
