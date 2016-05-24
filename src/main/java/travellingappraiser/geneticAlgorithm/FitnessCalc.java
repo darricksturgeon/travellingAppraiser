@@ -1,7 +1,6 @@
 package travellingappraiser.geneticAlgorithm;
 
-import static travellingappraiser.geneticAlgorithm.Defaults.ROUTES;
-import static travellingappraiser.geneticAlgorithm.Defaults.TOTAL_LOCATIONS;
+import static travellingappraiser.geneticAlgorithm.Parameters.ROUTES;
 
 /**
  * Created by darrick on 5/10/16.

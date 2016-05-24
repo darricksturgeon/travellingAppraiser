@@ -6,7 +6,7 @@ import com.google.maps.model.GeocodingResult;
 
 import java.util.concurrent.TimeUnit;
 
-import static travellingappraiser.geneticAlgorithm.Defaults.API_KEY;
+import static travellingappraiser.geneticAlgorithm.Parameters.API_KEY;
 
 /**
  * Created by darrick on 5/20/16.

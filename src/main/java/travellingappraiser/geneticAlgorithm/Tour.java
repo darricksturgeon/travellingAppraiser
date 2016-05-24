@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-import static travellingappraiser.geneticAlgorithm.Defaults.*;
+import static travellingappraiser.geneticAlgorithm.Parameters.*;
 
 
 /**
@@ -35,13 +35,18 @@ public class Tour {
     public void generateIndividual() {
 
         this.shuffleGenes();
+        if(!customRoute) {
+            for (int i = 0; i < ROUTES; i++) {
+                setRoute(i, (short) PATH_LENGTH);
+            }
 
-        for (int i = 0; i < ROUTES; i++) {
-            setRoute(i,(short)PATH_LENGTH);
-        }
-
-        if(TOTAL_LOCATIONS%PATH_LENGTH!=0) {
-            setRoute(ROUTES-1, (short) (TOTAL_LOCATIONS % PATH_LENGTH));
+            if (TOTAL_LOCATIONS % PATH_LENGTH != 0) {
+                setRoute(ROUTES - 1, (short) (TOTAL_LOCATIONS % PATH_LENGTH));
+            }
+        } else {
+            for (int i = 0; i < customRouteArray.length; i++) {
+                setRoute(i, (short) customRouteArray[i]);
+            }
         }
 
     }
@@ -163,15 +168,13 @@ public class Tour {
     public int[] getRouteIndeces(int route) {
         int startpoint = 0;
         int endpoint;
-        if (!VARY_ROUTE_LENGTH) {
-            startpoint = PATH_LENGTH*route;
-            endpoint = startpoint+PATH_LENGTH;
-        } else {
-            for (int i = 0; i < route ; i++) {
-                startpoint+= this.getRouteLength(i);
-            }
-            endpoint = startpoint + this.getRouteLength(route);
+
+        for (int i = 0; i < route ; i++) {
+            startpoint+= this.getRouteLength(i);
         }
+
+        endpoint = startpoint + this.getRouteLength(route);
+
         return new int[]{startpoint,endpoint};
     }
 

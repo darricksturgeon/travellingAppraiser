@@ -1,6 +1,6 @@
 package travellingappraiser.geneticAlgorithm;
 
-import static travellingappraiser.geneticAlgorithm.Defaults.*;
+import static travellingappraiser.geneticAlgorithm.Parameters.*;
 
 /**
  * Created by darrick on 5/10/16.
@@ -79,11 +79,11 @@ public class Algorithm {
     // Mutate an individual
     private static void mutate(Tour tour) {
 
-        while(Math.random()<swapMutationRate) {
+        if(Math.random()<swapMutationRate) {
             mutateSwap(tour);
         }
 
-        while(Math.random()<flipMutationRate){
+        if(Math.random()<flipMutationRate){
             mutateFlip(tour);
         }
 

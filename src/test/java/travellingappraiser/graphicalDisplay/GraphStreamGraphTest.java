@@ -1,15 +1,10 @@
 package travellingappraiser.graphicalDisplay;
 
-import org.graphstream.ui.graphicGraph.GraphicGraph;
-import org.graphstream.ui.view.View;
 import org.graphstream.ui.view.Viewer;
-import org.junit.Before;
 import org.junit.Test;
 import travellingappraiser.geneticAlgorithm.*;
 
-import javax.swing.*;
-
-import static travellingappraiser.geneticAlgorithm.Defaults.TOTAL_LOCATIONS;
+import static travellingappraiser.geneticAlgorithm.Parameters.TOTAL_LOCATIONS;
 
 /**
  * Created by darrick on 5/15/16.
