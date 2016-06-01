@@ -4,6 +4,10 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.8
 
+stage {
+    dependsOn build
+}
+
 repositories {
     mavenCentral()
 }

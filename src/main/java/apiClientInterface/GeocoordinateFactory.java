@@ -2,6 +2,8 @@ package apiClientInterface;
 
 import com.google.maps.model.LatLng;
 
+import static java.lang.Math.cos;
+
 /**
  * Created by darrick on 5/21/16.
  */
@@ -23,8 +25,9 @@ public class GeocoordinateFactory {
                     .getGeocodingResult(locations[i])[0]
                     .geometry.location;
 
-            geoCoordinates[i][0] = latLng.lat;
-            geoCoordinates[i][1] = latLng.lng;
+            //for small scale, (lat,lng) -> (y,x).  Here we convert to kms as well.
+            geoCoordinates[i][1] = latLng.lat*110.574;
+            geoCoordinates[i][0] = latLng.lng*111.320*cos(latLng.lat * 3.14159/180);
         }
 
         return geoCoordinates;

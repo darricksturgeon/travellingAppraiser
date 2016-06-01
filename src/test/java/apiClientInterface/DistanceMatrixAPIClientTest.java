@@ -9,7 +9,7 @@ import org.junit.Test;
 /**
  * Created by darrick on 5/12/16.
  */
-public class APIClientTest {
+public class DistanceMatrixAPIClientTest {
     public DistanceMatrixAPIClient client;
 
     @Before

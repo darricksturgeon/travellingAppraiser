@@ -19,7 +19,8 @@ public class GraphStreamGraphTest {
 
     @Test
     public void runGraphStream() {
-
+        GAParameters.setTotalLocations(50);
+        GAParameters.setROUTES(10);
         locations = TestObjects.randMatrix(TOTAL_LOCATIONS+1);
         int[][] distanceMatrix = TestObjects.randDistanceMatrix(locations);
 

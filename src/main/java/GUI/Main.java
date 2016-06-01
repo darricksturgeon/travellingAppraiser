@@ -7,6 +7,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
@@ -14,6 +16,10 @@ import javafx.stage.Stage;
 import travellingappraiser.geneticAlgorithm.GAParameters;
 import travellingappraiser.geneticAlgorithm.RunGA;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 /**
@@ -23,6 +29,26 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    private ObservableList<String> items;
+
+    //construct a url for google maps to display a circuit
+    public void googleWaypoints(int[] locs) throws URISyntaxException, IOException {
+
+        String uriString = "http://maps.google.com/maps?";
+
+        uriString += "saddr=" + items.get(0).replace(' ','+');
+        uriString += "daddr=" + items.get(locs[0]).replace(' ','+');
+
+        for (int i = 1; i < locs.length; i++) {
+            uriString += "+to:" + items.get(locs[i]).replace(' ', '+');
+        }
+        uriString += "+to:" + items.get(0).replace(' ','+');
+
+        URI uri = new URI(uriString);
+        Desktop.getDesktop().browse(uri);
+
     }
 
 
@@ -142,8 +168,9 @@ public class Main extends Application {
                     System.out.print("Error with custom route, check that the sum = locations to visit");
                 }
             }
-
+            run.setDisable(false);
             new RunGA().run();
+            run.setDisable(true);
         });
 
         Pane mylayout = new Pane();
