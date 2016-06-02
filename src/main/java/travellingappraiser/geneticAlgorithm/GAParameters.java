@@ -7,7 +7,7 @@ public class GAParameters {
 
     public GAParameters() {}
 
-    public static String API_KEY = "AIzaSyAYfhjI4BX7vUDqtdrzNPjkRtUYH8ptC5o";
+    public static String API_KEY = "";
 
     public static int TOTAL_LOCATIONS;
     static int PATH_LENGTH = 5;

@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad8a6b47-5654-46e2-8d26-4ab5d9d0dcd3" name="Default" comment="Functionally complete as of June 1st.  Future work involves integrating a database and web hosting">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/GUI/Main.java" afterPath="$PROJECT_DIR$/src/main/java/gui/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/GUI/MainTest.java" afterPath="$PROJECT_DIR$/src/test/java/gui/MainTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/RunGA.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/RunGA.class" />
+    <list default="true" id="ad8a6b47-5654-46e2-8d26-4ab5d9d0dcd3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" />
     </list>
     <ignored path="travelling-appraiser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GAParameters.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GAParameters.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="37" />
+            <state relative-caret-position="135">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -119,9 +114,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,14 +122,14 @@
       <file leaf-file-name="Algorithm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="915">
               <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunGA.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunGA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
@@ -459,12 +452,12 @@
         <option value="$PROJECT_DIR$/src/main/java/GUI/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/GUI/MainTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/apiClientInterface/DistanceMatrixAPIClientTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/RunGA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java" />
       </list>
     </option>
   </component>
@@ -1274,7 +1267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464825320140</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Functionally complete as of June 1st.  Future work involves integrating a database and web hosting">
+      <created>1464908023936</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1464908023936</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1635,6 +1635,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1664,6 +1665,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1686,6 +1688,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1714,16 +1721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/apiClientInterface/DistanceMatrixAPIClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1748,14 +1745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Tour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1764,14 +1753,6 @@
             <element signature="e#5847#5848#0" expanded="true" />
             <element signature="e#5903#5904#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1795,6 +1776,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="89" column="75" selection-start-line="89" selection-start-column="75" selection-end-line="89" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/apiClientInterface/DistanceMatrixAPIClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GAParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
       </provider>
