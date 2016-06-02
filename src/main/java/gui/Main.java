@@ -1,4 +1,4 @@
-package GUI;
+package gui;
 
 import apiClientInterface.InitializeData;
 
@@ -29,26 +29,6 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
-
-    private ObservableList<String> items;
-
-    //construct a url for google maps to display a circuit
-    public void googleWaypoints(int[] locs) throws URISyntaxException, IOException {
-
-        String uriString = "http://maps.google.com/maps?";
-
-        uriString += "saddr=" + items.get(0).replace(' ','+');
-        uriString += "daddr=" + items.get(locs[0]).replace(' ','+');
-
-        for (int i = 1; i < locs.length; i++) {
-            uriString += "+to:" + items.get(locs[i]).replace(' ', '+');
-        }
-        uriString += "+to:" + items.get(0).replace(' ','+');
-
-        URI uri = new URI(uriString);
-        Desktop.getDesktop().browse(uri);
-
     }
 
 
@@ -165,12 +145,14 @@ public class Main extends Application {
                     GAParameters.setCustomRouteArray(numbers);
                     GAParameters.setROUTES(numbers.length);
                 } else {
-                    System.out.print("Error with custom route, check that the sum = locations to visit");
+                    System.out.print("Error with loading custom route, check that the sum = #locations to visit\n");
                 }
             }
-            run.setDisable(false);
-            new RunGA().run();
             run.setDisable(true);
+            RunGA gen = new RunGA();
+            gen.setItems(items);
+            gen.run();
+            run.setDisable(false);
         });
 
         Pane mylayout = new Pane();

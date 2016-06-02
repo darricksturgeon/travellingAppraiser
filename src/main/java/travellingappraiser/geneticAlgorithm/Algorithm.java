@@ -56,7 +56,7 @@ public class Algorithm {
         short[] route = parent2.getRoute(routeNumber);
 
         int subrouteLength = (int) (1+(route.length-1)*Math.random());
-        int subroutePosition = (int) ((PATH_LENGTH-subrouteLength)*Math.random());
+        int subroutePosition = (int) ((route.length-subrouteLength)*Math.random());
         short[] subroute = new short[subrouteLength];
 
         System.arraycopy(route, subroutePosition, subroute, 0, subrouteLength);

@@ -1,9 +1,6 @@
-package GUI;
+package gui;
 
-import javafx.application.Application;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by darrick on 6/1/16.

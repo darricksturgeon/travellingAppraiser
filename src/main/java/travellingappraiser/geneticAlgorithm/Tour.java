@@ -173,7 +173,7 @@ public class Tour {
             startpoint+= this.getRouteLength(i);
         }
 
-        endpoint = startpoint + this.getRouteLength(route);
+        endpoint = startpoint + this.getRouteLength(route)-1;
 
         return new int[]{startpoint,endpoint};
     }

@@ -1,8 +1,16 @@
 package travellingappraiser.geneticAlgorithm;
 
 import apiClientInterface.MatrixFactory;
+import javafx.collections.ObservableList;
 import org.graphstream.ui.view.Viewer;
 import travellingappraiser.graphicalDisplay.GraphStreamGraph;
+
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Arrays;
+import java.util.Observable;
 
 import static travellingappraiser.geneticAlgorithm.GAParameters.*;
 
@@ -13,6 +21,7 @@ public class RunGA implements Runnable {
 
     private Tour bestTour;
     private GraphStreamGraph graph;
+    private ObservableList<String> items;
 
 
     public void run() {
@@ -52,6 +61,35 @@ public class RunGA implements Runnable {
                 + pop.getFittest().getFitness() + " Distance: " + -pop.getFittest().getFitness());
 
         System.out.println(pop.getFittest().toString());
+
+        for (int i = 0; i < getROUTES(); i++) {
+            try {
+                googleWaypoints(bestTour.getRoute(i));
+            } catch (Exception e) {e.printStackTrace();}
+        }
+
+
+    }
+
+    public void setItems(ObservableList<String> items) { this.items = items;}
+
+    //construct a url for google maps to display a circuit
+    public void googleWaypoints(short[] locs) throws URISyntaxException, IOException {
+
+        String uriString = "http://maps.google.com/maps?";
+
+        uriString += "saddr=" + items.get(0).replace(' ','+') + "&";
+        uriString += "daddr=" + items.get(locs[0]).replace(' ','+');
+
+        for (int i = 1; i < locs.length; i++) {
+            uriString += "+to:" + items.get(locs[i]).replace(' ', '+');
+        }
+        uriString += "+to:" + items.get(0).replace(' ','+');
+
+        URI uri = new URI(uriString);
+        if(Desktop.isDesktopSupported()) {Desktop.getDesktop().browse(uri);};
+        System.out.println(uriString);
+
     }
 
 }
