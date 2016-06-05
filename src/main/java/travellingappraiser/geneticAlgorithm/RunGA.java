@@ -9,13 +9,15 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Arrays;
-import java.util.Observable;
 
-import static travellingappraiser.geneticAlgorithm.GAParameters.*;
+import static travellingappraiser.geneticAlgorithm.GASettings.*;
 
 /**
  * Created by darrick on 5/14/16.
+ *
+ * RunGA is the main method of the geneticAlgorithm package.  Together with settings from
+ * GASettings it will guild the process of computation and outputs the final results
+ * as urls, and attempts to call the user's browser to display them.
  */
 public class RunGA implements Runnable {
 
@@ -87,7 +89,7 @@ public class RunGA implements Runnable {
         uriString += "+to:" + items.get(0).replace(' ','+');
 
         URI uri = new URI(uriString);
-        if(Desktop.isDesktopSupported()) {Desktop.getDesktop().browse(uri);};
+        if(Desktop.isDesktopSupported()) {Desktop.getDesktop().browse(uri);}
         System.out.println(uriString);
 
     }

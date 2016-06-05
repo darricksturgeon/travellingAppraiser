@@ -2,10 +2,13 @@ package travellingappraiser.geneticAlgorithm;
 
 /**
  * Created by darrick on 5/11/16.
+ *
+ * Basic settings for the algorithm, as well as the DistanceMatrix and Geocoordinates
+ * necessary for computation.  This class only contains static fields.
  */
-public class GAParameters {
+public class GASettings {
 
-    public GAParameters() {}
+    public GASettings() {}
 
     public static String API_KEY = "";
 
@@ -27,7 +30,7 @@ public class GAParameters {
     }
 
     public static void setGeocoordinates(double[][] geocoordinates) {
-        GAParameters.geocoordinates = geocoordinates;
+        GASettings.geocoordinates = geocoordinates;
     }
 
     public static boolean isCustomRoute() {
@@ -35,7 +38,7 @@ public class GAParameters {
     }
 
     public static void setCustomRoute(boolean customRoute) {
-        GAParameters.customRoute = customRoute;
+        GASettings.customRoute = customRoute;
     }
 
     public static int[] getCustomRouteArray() {
@@ -43,7 +46,7 @@ public class GAParameters {
     }
 
     public static void setCustomRouteArray(int[] customRouteArray) {
-        GAParameters.customRouteArray = customRouteArray;
+        GASettings.customRouteArray = customRouteArray;
     }
 
     public static int[][] getDistanceMatrix() {
@@ -51,7 +54,7 @@ public class GAParameters {
     }
 
     public static void setDistanceMatrix(int[][] distanceMatrix) {
-        GAParameters.distanceMatrix = distanceMatrix;
+        GASettings.distanceMatrix = distanceMatrix;
     }
 
     public static String getApiKey() {
@@ -84,7 +87,7 @@ public class GAParameters {
     }
 
     public static void setROUTES(int ROUTES) {
-        GAParameters.ROUTES = ROUTES;
+        GASettings.ROUTES = ROUTES;
     }
 
     public static boolean isMatrixUndirected() {
@@ -92,7 +95,7 @@ public class GAParameters {
     }
 
     public static void setMatrixUndirected(boolean matrixUndirected) {
-        GAParameters.matrixUndirected = matrixUndirected;
+        GASettings.matrixUndirected = matrixUndirected;
     }
 
     public static boolean isNoOriginWeight() {
@@ -100,7 +103,7 @@ public class GAParameters {
     }
 
     public static void setNoOriginWeight(boolean noOriginWeight) {
-        GAParameters.noOriginWeight = noOriginWeight;
+        GASettings.noOriginWeight = noOriginWeight;
     }
 
     //function to create file which stores defaults? ...

@@ -6,6 +6,9 @@ import static java.lang.Math.cos;
 
 /**
  * Created by darrick on 5/21/16.
+ *
+ * GeocoordinateFactory utilizes Strings and calls the GeocodingAPIClient, in order to
+ * create a full array of Geocoordinates.
  */
 public class GeocoordinateFactory {
 
@@ -26,8 +29,8 @@ public class GeocoordinateFactory {
                     .geometry.location;
 
             //for small scale, (lat,lng) -> (y,x).  Here we convert to kms as well.
-            geoCoordinates[i][1] = latLng.lat*110.574;
-            geoCoordinates[i][0] = latLng.lng*111.320*cos(latLng.lat * 3.14159/180);
+            geoCoordinates[i][1] = latLng.lat;
+            geoCoordinates[i][0] = latLng.lng;
         }
 
         return geoCoordinates;

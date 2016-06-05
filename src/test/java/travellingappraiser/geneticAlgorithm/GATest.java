@@ -2,10 +2,13 @@ package travellingappraiser.geneticAlgorithm;
 
 import org.junit.Test;
 
-import static travellingappraiser.geneticAlgorithm.GAParameters.TOTAL_LOCATIONS;
+import static travellingappraiser.geneticAlgorithm.GASettings.TOTAL_LOCATIONS;
 
 /**
  * Created by darrick on 5/14/16.
+ *
+ * Test to see if the classes of geneticAlgorithm package can be fit together properly.
+ * Essentially GARunTest.
  */
 public class GATest {
 

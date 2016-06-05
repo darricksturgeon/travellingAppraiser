@@ -1,9 +1,14 @@
 package travellingappraiser.geneticAlgorithm;
 
-import static travellingappraiser.geneticAlgorithm.GAParameters.ROUTES;
+import static travellingappraiser.geneticAlgorithm.GASettings.ROUTES;
 
 /**
  * Created by darrick on 5/10/16.
+ *
+ * Calculates the fitness of a Tour.  At the moment, fitness is simply -(total distance)
+ * where total distance is the sum over all routes of the Tour.  It is negative so that
+ * any suitable definition of fitness need only satisfy:
+ * Better fitness score > Worse fitness score
  */
 public class FitnessCalc {
 

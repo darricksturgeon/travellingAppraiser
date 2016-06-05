@@ -6,10 +6,14 @@ import com.google.maps.model.GeocodingResult;
 
 import java.util.concurrent.TimeUnit;
 
-import static travellingappraiser.geneticAlgorithm.GAParameters.API_KEY;
+import static travellingappraiser.geneticAlgorithm.GASettings.API_KEY;
 
 /**
  * Created by darrick on 5/20/16.
+ *
+ * Communicates with Google Maps Geocoding API, accepts an address or
+ * query, and returns a GeocodingResult[], which contains the latitude
+ * and longitude of the location as would be returned searching via google maps.
  */
 public class GeocodingAPIClient {
 

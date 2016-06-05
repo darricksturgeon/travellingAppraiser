@@ -1,11 +1,11 @@
 package travellingappraiser.geneticAlgorithm;
 
-import static travellingappraiser.geneticAlgorithm.GAParameters.*;
+import static travellingappraiser.geneticAlgorithm.GASettings.*;
 
 /**
  * Created by darrick on 5/10/16.
  *
- *
+ * Contains the functions of genetic algorithms: mutation and crossover.
  */
 public class Algorithm {
 

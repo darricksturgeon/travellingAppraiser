@@ -9,16 +9,16 @@ import java.util.ArrayList;
  * Google Distance Matrix API limits responses to 100 elements, where
  * an element is any origin, destination pair.  Therefore
  * origins x destinations should not exceed 100.
+ *
+ * Fields are two arraylists, representing origins and destinations,
+ * which can only be added to.
  */
 public class DistanceMatrixRequest {
 
     private ArrayList<String> oriList = new ArrayList<>();
     private ArrayList<String> destList = new ArrayList<>();
 
-    /*
-    private boolean asLatLong;
-    */
-
+    /*constructors*/
     public DistanceMatrixRequest() {}
 
     public DistanceMatrixRequest(String[] origins, String[] destinations) {
@@ -26,11 +26,13 @@ public class DistanceMatrixRequest {
         addDestinations(destinations);
     }
 
+
     public void addOrigins(String[] o) {
         oriList.ensureCapacity(oriList.size()+o.length);
 
         for (String s: o) {oriList.add(s);}
     }
+
 
     public void addDestinations(String[] d) {
         destList.ensureCapacity(destList.size()+d.length);
@@ -46,14 +48,4 @@ public class DistanceMatrixRequest {
     public String[] getDestinations() {
         return destList.toArray(new String[0]);
     }
-
-    /*
-    public boolean isAsLatLong() {
-        return asLatLong;
-    }
-
-    public void setAsLatLong(boolean asLatLong) {
-        this.asLatLong = asLatLong;
-    }
-    */
 }

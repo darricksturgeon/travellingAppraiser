@@ -13,17 +13,16 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import travellingappraiser.geneticAlgorithm.GAParameters;
+import travellingappraiser.geneticAlgorithm.GASettings;
 import travellingappraiser.geneticAlgorithm.RunGA;
 
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 /**
  * Created by darrick on 5/23/16.
+ *
+ * This is the main GUI (using JavaFX), it is both a GUI and a controller, and much of the task delegation
+ * can be found here.
  */
 public class Main extends Application {
 
@@ -114,7 +113,7 @@ public class Main extends Application {
             }
         });
         submit.setOnAction(event-> {
-            GAParameters.setTotalLocations(items.size());
+            GASettings.setTotalLocations(items.size());
             items.add(items.get(0));
             items.set(0,homeaddr.getText());
             InitializeData.main(items.toArray(new String[0]));
@@ -126,8 +125,8 @@ public class Main extends Application {
             submit.setDisable(true);
         });
         run.setOnAction(event -> {
-            GAParameters.setMatrixUndirected(dirOption.isSelected());
-            GAParameters.setNoOriginWeight(oriOption.isSelected());
+            GASettings.setMatrixUndirected(dirOption.isSelected());
+            GASettings.setNoOriginWeight(oriOption.isSelected());
 
             //checks for an input in custom route, and enters it.
             if(!route.getText().isEmpty()) {
@@ -140,10 +139,10 @@ public class Main extends Application {
 
                 int total =0;
                 for (int k: numbers) { total+=k; }
-                if (total==GAParameters.getTotalLocations()) {
-                    GAParameters.setCustomRoute(true);
-                    GAParameters.setCustomRouteArray(numbers);
-                    GAParameters.setROUTES(numbers.length);
+                if (total== GASettings.getTotalLocations()) {
+                    GASettings.setCustomRoute(true);
+                    GASettings.setCustomRouteArray(numbers);
+                    GASettings.setROUTES(numbers.length);
                 } else {
                     System.out.print("Error with loading custom route, check that the sum = #locations to visit\n");
                 }

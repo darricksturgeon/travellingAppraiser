@@ -4,10 +4,13 @@ import org.graphstream.ui.view.Viewer;
 import org.junit.Test;
 import travellingappraiser.geneticAlgorithm.*;
 
-import static travellingappraiser.geneticAlgorithm.GAParameters.TOTAL_LOCATIONS;
+import static travellingappraiser.geneticAlgorithm.GASettings.TOTAL_LOCATIONS;
 
 /**
  * Created by darrick on 5/15/16.
+ *
+ * Test of the graphing portion of the Graphical output.  Uses Math.random to generate
+ * location data.
  */
 public class GraphStreamGraphTest {
 
@@ -19,8 +22,8 @@ public class GraphStreamGraphTest {
 
     @Test
     public void runGraphStream() {
-        GAParameters.setTotalLocations(50);
-        GAParameters.setROUTES(10);
+        GASettings.setTotalLocations(50);
+        GASettings.setROUTES(10);
         locations = TestObjects.randMatrix(TOTAL_LOCATIONS+1);
         int[][] distanceMatrix = TestObjects.randDistanceMatrix(locations);
 
