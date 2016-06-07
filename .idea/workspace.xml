@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad8a6b47-5654-46e2-8d26-4ab5d9d0dcd3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/apiClientInterface/APIClientTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/apiClientInterface/DistanceMatrixRequest.class" afterPath="$PROJECT_DIR$/build/classes/main/apiClientInterface/DistanceMatrixRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Algorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/FitnessCalc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/RunGA.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/RunGA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" afterPath="$PROJECT_DIR$/build/classes/main/travellingappraiser/geneticAlgorithm/Tour.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GASettings.java" afterPath="$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GASettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" afterPath="$PROJECT_DIR$/src/test/java/travellingappraiser/graphicalDisplay/GraphStreamGraphTest.java" />
     </list>
     <ignored path="travelling-appraiser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,16 +48,28 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2490">
               <caret line="175" column="60" selection-start-line="175" selection-start-column="60" selection-end-line="175" selection-end-column="60" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1140#1141#0" expanded="false" />
+                <element signature="e#1187#1188#0" expanded="false" />
+                <element signature="e#4473#4474#0" expanded="false" />
+                <element signature="e#4508#4509#0" expanded="false" />
+                <element signature="e#5845#5846#0" expanded="false" />
+                <element signature="e#5901#5902#0" expanded="false" />
+                <element signature="e#5951#5952#0" expanded="false" />
+                <element signature="e#6000#6001#0" expanded="false" />
+                <element signature="e#6212#6213#0" expanded="false" />
+                <element signature="e#6279#6280#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GASettings.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GASettings.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GASettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+            <state relative-caret-position="180">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding>
                 <element signature="e#1911#1912#0" expanded="true" />
                 <element signature="e#1959#1960#0" expanded="true" />
@@ -80,7 +83,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding />
+              <folding>
+                <element signature="e#1976#1977#0" expanded="false" />
+                <element signature="e#2019#2020#0" expanded="false" />
+                <element signature="e#2079#2080#0" expanded="false" />
+                <element signature="e#2118#2119#0" expanded="false" />
+                <element signature="e#2168#2169#0" expanded="false" />
+                <element signature="e#2205#2206#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +100,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -140,7 +152,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1215">
               <caret line="91" column="76" selection-start-line="91" selection-start-column="76" selection-end-line="91" selection-end-column="76" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -634,6 +648,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travelling-appraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travellingAppraiser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiClientInterface" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1386,7 +1426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1465161886474</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updated descriptions of classes">
+      <created>1465264344707</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1465264344707</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1423,7 +1470,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1087" height="840" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1845,7 +1892,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2490">
           <caret line="175" column="60" selection-start-line="175" selection-start-column="60" selection-end-line="175" selection-end-column="60" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1140#1141#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#4473#4474#0" expanded="false" />
+            <element signature="e#4508#4509#0" expanded="false" />
+            <element signature="e#5845#5846#0" expanded="false" />
+            <element signature="e#5901#5902#0" expanded="false" />
+            <element signature="e#5951#5952#0" expanded="false" />
+            <element signature="e#6000#6001#0" expanded="false" />
+            <element signature="e#6212#6213#0" expanded="false" />
+            <element signature="e#6279#6280#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1853,7 +1912,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1861,7 +1922,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#1976#1977#0" expanded="false" />
+            <element signature="e#2019#2020#0" expanded="false" />
+            <element signature="e#2079#2080#0" expanded="false" />
+            <element signature="e#2118#2119#0" expanded="false" />
+            <element signature="e#2168#2169#0" expanded="false" />
+            <element signature="e#2205#2206#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1869,7 +1937,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1215">
           <caret line="91" column="76" selection-start-line="91" selection-start-column="76" selection-end-line="91" selection-end-column="76" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1878,17 +1948,6 @@
         <state relative-caret-position="156">
           <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GASettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-          <folding>
-            <element signature="e#1911#1912#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1905,6 +1964,17 @@
         <state relative-caret-position="135">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/travellingappraiser/geneticAlgorithm/GASettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="e#1911#1912#0" expanded="true" />
+            <element signature="e#1959#1960#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
