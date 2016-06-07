@@ -71,7 +71,6 @@ public class GASettings {
 
     public static void setTotalLocations(int totalLocations) {
         TOTAL_LOCATIONS = totalLocations;
-        ROUTES = (int) Math.ceil((double) TOTAL_LOCATIONS / PATH_LENGTH);
     }
 
     public static int getPathLength() {
@@ -83,7 +82,11 @@ public class GASettings {
     }
 
     public static int getROUTES() {
-        return ROUTES;
+        if(ROUTES!=0) {return ROUTES;}
+        else {
+            ROUTES = (int) Math.ceil((double) TOTAL_LOCATIONS / PATH_LENGTH);
+            return getROUTES();
+        }
     }
 
     public static void setROUTES(int ROUTES) {

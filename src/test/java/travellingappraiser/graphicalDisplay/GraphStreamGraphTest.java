@@ -22,32 +22,11 @@ public class GraphStreamGraphTest {
 
     @Test
     public void runGraphStream() {
+        GASettings.setPathLength(50);
         GASettings.setTotalLocations(50);
-        GASettings.setROUTES(10);
+
         locations = TestObjects.randMatrix(TOTAL_LOCATIONS+1);
         int[][] distanceMatrix = TestObjects.randDistanceMatrix(locations);
-
-
-        /*this tests the concept of adding 'house viewing' times
-        * by changing the distance of the last leg, making it less important*/
-
-        /*
-        for (int i = 0; i < distanceMatrix[0].length; i++) {
-                distanceMatrix[i][0] -= 3000;
-        }
-        */
-
-        /*this tests the concept of 'closest houses', by weighting travel to/from home
-        as 0. */
-
-        /*
-        for (int i = 0; i < distanceMatrix[0].length; i++) {
-            distanceMatrix[i][0] = 0;
-            distanceMatrix[0][i] = 0;
-        }
-        */
-
-
 
 
 
@@ -65,8 +44,8 @@ public class GraphStreamGraphTest {
         viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.EXIT);
         viewer.enableXYZfeedback(true);
 
-        for (int i = 0; i < 2000000; i++) {
-            for (int j = 0; j < 1; j++) {
+        for (int i = 0; i < 20000; i++) {
+            for (int j = 0; j < 10; j++) {
                 pop = Algorithm.evolvePopulation(pop);
             }
             bestTour = pop.getFittest();
